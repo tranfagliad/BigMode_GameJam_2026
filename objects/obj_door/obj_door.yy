@@ -9,8 +9,8 @@
   "name":"obj_door",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"rooms",
+    "path":"folders/objects/rooms.yy",
   },
   "parentObjectId":null,
   "persistent":false,

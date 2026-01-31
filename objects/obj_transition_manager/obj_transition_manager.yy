@@ -10,8 +10,8 @@
   "name":"obj_transition_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"system",
+    "path":"folders/objects/system.yy",
   },
   "parentObjectId":null,
   "persistent":true,
