@@ -1,6 +1,6 @@
 
 if (mouse_check_button_pressed(mb_left)) {
-    current_noise += 5;
+    current_noise += 8;
 }
 
 current_noise = clamp(current_noise, 0, 50);
