@@ -12,3 +12,6 @@ new_x = 0;
 transition_playing = false;
 
 room_camera_positions = {};
+
+
+global.target_door_id = "";
