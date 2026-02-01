@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"fonts","folderPath":"folders/fonts.yy","name":"fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"hud","folderPath":"folders/objects/hud.yy","name":"hud","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms","folderPath":"folders/objects/rooms.yy","name":"rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -32,6 +33,10 @@
   },
   "name":"BigMode_GameJam_2026",
   "resources":[
+    {"id":{"name":"fnt_id_donor","path":"fonts/fnt_id_donor/fnt_id_donor.yy",},},
+    {"id":{"name":"fnt_id_name","path":"fonts/fnt_id_name/fnt_id_name.yy",},},
+    {"id":{"name":"fnt_id_smol_bold","path":"fonts/fnt_id_smol_bold/fnt_id_smol_bold.yy",},},
+    {"id":{"name":"fnt_id_smol","path":"fonts/fnt_id_smol/fnt_id_smol.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_phone","path":"objects/obj_phone/obj_phone.yy",},},
@@ -49,6 +54,7 @@
     {"id":{"name":"spr_danger_icon","path":"sprites/spr_danger_icon/spr_danger_icon.yy",},},
     {"id":{"name":"spr_door_a","path":"sprites/spr_door_a/spr_door_a.yy",},},
     {"id":{"name":"spr_door_b","path":"sprites/spr_door_b/spr_door_b.yy",},},
+    {"id":{"name":"spr_id_donor_heart","path":"sprites/spr_id_donor_heart/spr_id_donor_heart.yy",},},
     {"id":{"name":"spr_label_CommonArea","path":"sprites/spr_label_CommonArea/spr_label_CommonArea.yy",},},
     {"id":{"name":"spr_label_Kitchen","path":"sprites/spr_label_Kitchen/spr_label_Kitchen.yy",},},
     {"id":{"name":"spr_label_main_menu","path":"sprites/spr_label_main_menu/spr_label_main_menu.yy",},},

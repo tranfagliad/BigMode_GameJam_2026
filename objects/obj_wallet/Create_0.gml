@@ -27,3 +27,27 @@ sway_intensity = 1.5;
 
 
 is_open = false;
+
+
+
+// Fake ID Details
+dl_number_prompt = "DL:";
+dl_number = "12345678";
+dob_prompt = "DOB:";
+dob = "01/04/1989";
+class_prompt = "Class:";
+class = "C";
+expire_prompt = "Exp:";
+expire = "01/04/2027";
+last_name = "SMITH";
+first_middle_name = "STEVEN SLICK";
+sex_prompt = "Sex:";
+sex = "YES";
+hair_prompt = "Hair:";
+hair = "Slickback";
+eyes_prompt = "Eyes:";
+eyes = "HAS 2";
+weight_prompt = "WGT:";
+weight = "BIGMODE";
+height_prompt = "HGT:";
+height = "6'-7\"";

@@ -10,7 +10,7 @@ var _my = device_mouse_y_to_gui(0);
 
 
 
-// If open, check from the far left. If closed, check from the center.
+// Dynamic Left Boundary
 var _x1 = is_open ? (wallet_x - (wallet_width / 2)) : wallet_x; 
 var _x2 = wallet_x + (wallet_width / 2);
 var _y1 = current_y; 
@@ -20,12 +20,12 @@ is_hovered = point_in_rectangle(_mx, _my, _x1, _y1, _x2, _y2);
 
 
 
-// Open the wallet
+// Only open the wallet on click
 if (is_hovered && mouse_check_button_pressed(mb_left)) {
-    is_open = !is_open; 
+    is_open = true; 
 }
 
-// Close automatically if the mouse leaves the active hitbox
+// Close the wallet only when the mouse leaves the area
 if (!is_hovered) {
     is_open = false;
 }
