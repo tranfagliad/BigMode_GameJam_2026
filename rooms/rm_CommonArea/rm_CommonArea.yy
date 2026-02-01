@@ -11,6 +11,7 @@
     {"name":"inst_1E25E944","path":"rooms/rm_CommonArea/rm_CommonArea.yy",},
     {"name":"inst_37B6AF9C","path":"rooms/rm_CommonArea/rm_CommonArea.yy",},
     {"name":"inst_613CBE7C","path":"rooms/rm_CommonArea/rm_CommonArea.yy",},
+    {"name":"inst_49A7F659","path":"rooms/rm_CommonArea/rm_CommonArea.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -28,6 +29,7 @@
         {"$GMRInstance":"v4","%Name":"inst_1E25E944","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E25E944","objectId":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":576.0,"y":320.0,},
         {"$GMRInstance":"v4","%Name":"inst_37B6AF9C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37B6AF9C","objectId":{"name":"obj_transition_manager","path":"objects/obj_transition_manager/obj_transition_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":672.0,"y":320.0,},
         {"$GMRInstance":"v4","%Name":"inst_613CBE7C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_613CBE7C","objectId":{"name":"obj_phone","path":"objects/obj_phone/obj_phone.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":32.0,"y":640.0,},
+        {"$GMRInstance":"v4","%Name":"inst_49A7F659","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49A7F659","objectId":{"name":"obj_wallet","path":"objects/obj_wallet/obj_wallet.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":1120.0,"y":640.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_372DCD20","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_372DCD20","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":11.5,"spriteId":{"name":"spr_left_side_indicator","path":"sprites/spr_left_side_indicator/spr_left_side_indicator.yy",},"x":0.0,"y":0.0,},
