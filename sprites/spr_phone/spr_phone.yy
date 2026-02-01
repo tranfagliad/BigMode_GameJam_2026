@@ -23,7 +23,7 @@
   ],
   "name":"spr_phone",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"placeholders_REPLACE_THESE",
     "path":"folders/sprites/placeholders_REPLACE_THESE.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":48,
     "yorigin":0,
   },
   "swatchColours":null,
