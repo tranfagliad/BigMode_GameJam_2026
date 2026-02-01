@@ -29,8 +29,8 @@ sway_intensity = 1.5;
 current_noise = 0;
 decay_rate = 0.98;
 wave_timer = 0;
-segments = 15;
-spacing = 6 * phone_scale;
+segments = 21;
+spacing = 4 * phone_scale;
 
 green = #00FF00;
 red = #FF0000;
@@ -41,3 +41,20 @@ intensity_max = 1;
 
 // Vertical offset to place wave on the phone screen
 wave_center_y_offset = 30;
+
+
+
+// Danger Meter
+danger_level = 0;   // 0 to 100, starting at 0
+danger_decay = 0.25;
+game_over_triggered = false;
+
+danger_bar_width = 60 * phone_scale; 
+danger_bar_height = 8 * phone_scale;
+danger_y_offset = 50;
+
+
+
+// Slickness Meter
+slickness_level = 0;   // 0 to 100, TODO: set this to the slickness level from the charavter creator
+slickness_y_offset = 70;

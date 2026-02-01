@@ -31,11 +31,30 @@ sway_x = lerp(sway_x, _target_sway_x, sway_lerp);
 
 
 // Noise Detection
-if (mouse_check_button_pressed(mb_left))
-{
-    current_noise += 8;
+if (mouse_check_button_pressed(mb_left)) {
+    var _spike = 8;
+    current_noise += _spike;
+    
+    var _multiplier = 1 + (current_noise * 0.08); 
+    danger_level += (_spike * _multiplier); 
 }
 
+// Decay noise
 current_noise = clamp(current_noise, 0, 25);
 current_noise *= decay_rate;
+
+// Update the current danger level
+danger_level = clamp(danger_level - danger_decay, 0, 100);
+
+// Game Over check
+if (danger_level >= 100 && !game_over_triggered) {
+    show_debug_message("GAME OVER");
+    game_over_triggered = true;
+}
+
 wave_timer += (0.1 + (current_noise * 0.05));
+
+
+
+// Prevents going through a door if it is clicked through the phone screen
+global.phone_blocking_input = is_hovered;

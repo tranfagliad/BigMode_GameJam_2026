@@ -38,5 +38,43 @@ for (var i = 0; i < segments; i++) {
 
 
 
-// Reset color
+// Danger Meter
+var _bar_x_offset = 20;
+var _db_x = (_draw_x - _bar_x_offset) - (danger_bar_width / 2);
+var _db_y = current_y + (danger_y_offset * phone_scale);
+
+draw_set_color(c_dkgray);
+draw_rectangle(_db_x, _db_y, _db_x + danger_bar_width, _db_y + danger_bar_height, false);
+
+var _fill_w = (danger_level / 100) * danger_bar_width;
+draw_set_color(c_yellow);
+draw_rectangle(_db_x, _db_y, _db_x + _fill_w, _db_y + danger_bar_height, false);
+
+draw_set_color(c_white);
+draw_rectangle(_db_x, _db_y, _db_x + danger_bar_width, _db_y + danger_bar_height, true);
+
+draw_sprite_ext(spr_danger_icon, 0, _db_x + danger_bar_width + 10, _db_y - 6, 0.5, 0.5, 0, c_white, 1);
+
+
+
+// Slickness Meter
+var _slick_x_offset = 20;
+var _sb_x = (_draw_x - _slick_x_offset) - (danger_bar_width / 2);
+var _sb_y = current_y + (slickness_y_offset * phone_scale);
+
+draw_set_color(c_dkgray);
+draw_rectangle(_sb_x, _sb_y, _sb_x + danger_bar_width, _sb_y + danger_bar_height, false);
+
+var _s_fill_w = (slickness_level / 100) * danger_bar_width;
+draw_set_color(c_yellow); 
+draw_rectangle(_sb_x, _sb_y, _sb_x + _s_fill_w, _sb_y + danger_bar_height, false);
+
+draw_set_color(c_white);
+draw_rectangle(_sb_x, _sb_y, _sb_x + danger_bar_width, _sb_y + danger_bar_height, true);
+
+draw_sprite_ext(spr_slickness_icon, 0, _sb_x + danger_bar_width + 10, _sb_y - 6, 0.5, 0.5, 0, c_white, 1);
+
+
+
+ // Always reset color
 draw_set_color(c_white);
