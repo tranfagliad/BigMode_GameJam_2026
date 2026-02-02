@@ -1,10 +1,35 @@
+// Check if ANY UI element is blocking input
+var _blocked = false;
 
-// Check if the phone is blocking input first
-if (instance_exists(obj_phone))
-{
-    if (global.phone_blocking_input) {
-        exit; // Don't trigger the door
-    }
+
+
+if (global.phone_blocking_input) {
+	_blocked = true;
+}
+
+
+
+// Direct safety check for Phone
+if (instance_exists(obj_phone)) {
+    if (obj_phone.is_hovered) {
+		_blocked = true;
+	}
+}
+
+
+
+// Direct safety check for Wallet
+if (instance_exists(obj_wallet)) {
+    if (obj_wallet.is_hovered) {
+		_blocked = true;
+	}
+}
+
+
+
+// If blocked, stop here
+if (_blocked) {
+	exit;
 }
 
 

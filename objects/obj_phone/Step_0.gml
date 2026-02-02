@@ -12,7 +12,11 @@ var _x2 = phone_x + (phone_width / 2);
 var _y1 = current_y;
 var _y2 = gui_h;
 
+
+
+// Hovered over the phone
 is_hovered = point_in_rectangle(_mx, _my, _x1, _y1, _x2, _y2);
+global.phone_blocking_input = is_hovered;
 
 var _target_y = is_hovered ? y_showing : y_hidden;
 current_y = lerp(current_y, _target_y, lerp_speed);
@@ -53,8 +57,3 @@ if (danger_level >= 100 && !game_over_triggered) {
 }
 
 wave_timer += (0.1 + (current_noise * 0.05));
-
-
-
-// Prevents going through a door if it is clicked through the phone screen
-global.phone_blocking_input = is_hovered;
