@@ -32,6 +32,14 @@ clock_y_offset = 8;
 
 
 
+// Flashlight
+flashlight_on = false;
+flashlight_btn_x_offset = 21;
+flashlight_btn_y_offset = 6;
+flashlight_radius = 160;
+
+
+
 // Battery Position
 battery_x_offset = 33;
 battery_y_offset = 6;
@@ -66,7 +74,6 @@ danger_bar_width = 70 * phone_scale;
 danger_bar_height = 3 * phone_scale;
 danger_x_offset = 15;
 danger_y_offset = 25;
-
 
 
 

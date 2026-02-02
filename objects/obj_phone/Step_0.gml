@@ -35,6 +35,29 @@ sway_x = lerp(sway_x, _target_sway_x, sway_lerp);
 
 
 
+// Flashlight Button
+var _current_draw_x = phone_x - sway_x;
+var _btn_w = sprite_get_width(spr_flashlight_button) * phone_scale;
+var _btn_h = sprite_get_height(spr_flashlight_button) * phone_scale;
+var _btn_x = _current_draw_x + (flashlight_btn_x_offset * phone_scale);
+var _btn_y = current_y + (flashlight_btn_y_offset * phone_scale);
+
+// Hitbox boundaries
+var _bx1 = _btn_x - (_btn_w / 2);
+var _by1 = _btn_y - (_btn_h / 2);
+var _bx2 = _btn_x + (_btn_w / 2);
+var _by2 = _btn_y + (_btn_h / 2);
+
+// On/Off
+if (mouse_check_button_pressed(mb_left)) {
+    if (point_in_rectangle(_mx, _my, _bx1, _by1, _bx2, _by2)) {
+        flashlight_on = !flashlight_on;
+        // audio_play_sound(snd_flashlight_click, 10, false);
+    }
+}
+
+
+
 // Noise Detection
 if (mouse_check_button_pressed(mb_left)) {
     var _spike = 8;

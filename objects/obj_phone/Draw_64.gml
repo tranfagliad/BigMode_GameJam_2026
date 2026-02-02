@@ -35,6 +35,14 @@ draw_set_valign(fa_top);
 
 
 
+// Draw Flashlight Button
+var _fb_x = _draw_x + (flashlight_btn_x_offset * phone_scale);
+var _fb_y = current_y + (flashlight_btn_y_offset * phone_scale);
+var _btn_frame = flashlight_on ? 1 : 0; 
+draw_sprite_ext(spr_flashlight_button, _btn_frame, _fb_x, _fb_y, 1.5, 1.5, 0, c_white, 1);
+
+
+
 // Draw the Battery
 var _bat_x = _draw_x + (battery_x_offset * phone_scale);
 var _bat_y = current_y + (battery_y_offset * phone_scale);

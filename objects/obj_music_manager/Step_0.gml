@@ -2,17 +2,17 @@
 // Room Logic
 switch (room) {
     case rm_Office:
-		target_vol = 0.8;
+		target_vol = 1;
 		target_cutoff = 20000;
 		break;
     
 	case rm_CommonArea:
-		target_vol = 0.4;
+		target_vol = 0.6;
 		target_cutoff = 1200;
 		break;
 		
     case rm_Kitchen:
-		target_vol = 0.2;
+		target_vol = 0.1;
 		target_cutoff = 600;
 		break;
 		
