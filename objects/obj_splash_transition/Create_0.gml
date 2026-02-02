@@ -1,7 +1,7 @@
 
 fade_alpha = 1;   // Start with a black screen
 fade_speed = 0.01;   
-wait_time = 120;
+wait_time = 60;
 timer = 0;
 
 state = Transition.Fading_In;

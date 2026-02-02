@@ -125,8 +125,8 @@
   "maintainGms1Font":false,
   "name":"fnt_id_smol",
   "parent":{
-    "name":"fonts",
-    "path":"folders/fonts.yy",
+    "name":"wallet",
+    "path":"folders/fonts/wallet.yy",
   },
   "pointRounding":0,
   "ranges":[

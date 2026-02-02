@@ -21,4 +21,4 @@ if (!audio_is_playing(snd_bgr_music)) {
 
 target_vol = 1.0;
 target_cutoff = 20000;
-lerp_speed = 0.05;
+lerp_speed = 0.1;

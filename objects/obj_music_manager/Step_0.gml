@@ -2,7 +2,7 @@
 // Room Logic
 switch (room) {
     case rm_Office:
-		target_vol = 1;
+		target_vol = 1.5;
 		target_cutoff = 20000;
 		break;
     
