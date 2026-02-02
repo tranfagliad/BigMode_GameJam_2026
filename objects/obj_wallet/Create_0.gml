@@ -51,3 +51,21 @@ weight_prompt = "WGT:";
 weight = "BIGMODE";
 height_prompt = "HGT:";
 height = "6'-7\"";
+
+
+
+// Note System
+notes = [];
+
+// Add the first note: Mom's Note
+array_push(notes, {
+    sprite: spr_white_note,
+    offset_x: 145,
+    offset_y: 150,
+    x_scale: 2.5,
+    y_scale: 0.5,
+    frame: 0,
+    anim_speed: 0.5,
+    w: sprite_get_width(spr_white_note) * 2.5,
+    h: sprite_get_height(spr_white_note) * 0.5
+});

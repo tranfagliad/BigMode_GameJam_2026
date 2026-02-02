@@ -41,6 +41,10 @@ if (target_room != noone)
 
     with (obj_transition_manager) {
         if (transition_state == Transition.Idle) {
+			var _foot_steps_sound = audio_play_sound(snd_foot_steps, 10, false);
+			audio_sound_gain(_foot_steps_sound, 0.5, 0);
+			audio_sound_gain(_foot_steps_sound, 0, 1500);
+			
             target_room = other.target_room;
             zoom_anchor_x = other.x; 
             zoom_anchor_y = other.y;
