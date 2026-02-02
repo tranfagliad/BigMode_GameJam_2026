@@ -25,6 +25,19 @@ sway_intensity = 1.5;
 
 
 
+// Clock Logic
+time_start_frame = get_timer();
+clock_x_offset = -35;
+clock_y_offset = 8;
+
+
+
+// Battery Position
+battery_x_offset = 33;
+battery_y_offset = 6;
+
+
+
 // Noise Indication
 current_noise = 0;
 decay_rate = 0.98;
@@ -40,7 +53,7 @@ intensity_min = 0;
 intensity_max = 1;
 
 // Vertical offset to place wave on the phone screen
-wave_center_y_offset = 30;
+wave_center_y_offset = 18;
 
 
 
@@ -49,12 +62,15 @@ danger_level = 0;   // 0 to 100, starting at 0
 danger_decay = 0.25;
 game_over_triggered = false;
 
-danger_bar_width = 60 * phone_scale; 
-danger_bar_height = 8 * phone_scale;
-danger_y_offset = 50;
+danger_bar_width = 70 * phone_scale; 
+danger_bar_height = 3 * phone_scale;
+danger_x_offset = 15;
+danger_y_offset = 25;
+
 
 
 
 // Slickness Meter
-slickness_level = 0;   // 0 to 100, TODO: set this to the slickness level from the charavter creator
-slickness_y_offset = 70;
+slickness_level = 0;   // 0 to 100, TODO: set this to the slickness level from the character creator
+slick_x_offset = 15;
+slickness_y_offset = 33;

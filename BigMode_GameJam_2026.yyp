@@ -69,6 +69,7 @@
     {"id":{"name":"snd_bgr_music","path":"sounds/snd_bgr_music/snd_bgr_music.yy",},},
     {"id":{"name":"snd_foot_steps","path":"sounds/snd_foot_steps/snd_foot_steps.yy",},},
     {"id":{"name":"snd_freezer_bgr","path":"sounds/snd_freezer_bgr/snd_freezer_bgr.yy",},},
+    {"id":{"name":"spr_battery","path":"sprites/spr_battery/spr_battery.yy",},},
     {"id":{"name":"spr_bigmode","path":"sprites/spr_bigmode/spr_bigmode.yy",},},
     {"id":{"name":"spr_danger_icon","path":"sprites/spr_danger_icon/spr_danger_icon.yy",},},
     {"id":{"name":"spr_door_a","path":"sprites/spr_door_a/spr_door_a.yy",},},

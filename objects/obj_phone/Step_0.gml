@@ -1,11 +1,12 @@
 
 if (room == rm_MainMenu) {
-	exit;
+    exit;
 }
+
+
 
 var _mx = device_mouse_x_to_gui(0);
 var _my = device_mouse_y_to_gui(0);
-
 
 var _x1 = phone_x - (phone_width / 2);
 var _x2 = phone_x + (phone_width / 2);
@@ -50,10 +51,15 @@ current_noise *= decay_rate;
 // Update the current danger level
 danger_level = clamp(danger_level - danger_decay, 0, 100);
 
-// Game Over check
+
+
+// IMPORTANT: Game Over check
 if (danger_level >= 100 && !game_over_triggered) {
     show_debug_message("GAME OVER");
     game_over_triggered = true;
 }
 
+
+
+// Wave speed scales with noise
 wave_timer += (0.1 + (current_noise * 0.05));

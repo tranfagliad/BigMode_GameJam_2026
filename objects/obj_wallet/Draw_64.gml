@@ -56,6 +56,9 @@ if (is_open)
     draw_set_font(fnt_id_donor);
     draw_set_colour(c_white);
     draw_text(_draw_x - 109, current_y + 383, "DONOR");
+	
+	// Reset font
+	draw_set_font(-1);
 }
 
 
