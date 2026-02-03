@@ -32,7 +32,7 @@ btn_hovered = false;
 // Credits System
 credits = [
     { name: "extonjunior", roles: "- Game Concept & Lore\n- Playtesting & QA" },
-    { name: "rocket176", roles: "- Programming\n- HUD Design" },
+    { name: "rocket176", roles: "- Programming\n- HUD & Menu Design" },
     { name: "JoanofSnark", roles: "- Music / SFX\n- Game Mechanics Design" },
     { name: "Ash", roles: "- Artwork\n- Backgrounds" },
     { name: "Mikerio", roles: "- Artwork\n- Backgrounds" }

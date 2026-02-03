@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"placeholders_REPLACE_THESE",
-    "path":"folders/sprites/placeholders_REPLACE_THESE.yy",
+    "name":"wallet",
+    "path":"folders/sprites/hud/wallet.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

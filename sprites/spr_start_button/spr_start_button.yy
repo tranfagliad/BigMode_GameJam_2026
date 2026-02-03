@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"placeholders_REPLACE_THESE",
-    "path":"folders/sprites/placeholders_REPLACE_THESE.yy",
+    "name":"main_menu",
+    "path":"folders/sprites/menus/main_menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

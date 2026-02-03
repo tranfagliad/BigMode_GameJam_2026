@@ -26,7 +26,6 @@ sway_intensity = 1.5;
 
 
 // Clock Logic
-time_start_frame = get_timer();
 clock_x_offset = -35;
 clock_y_offset = 8;
 

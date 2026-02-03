@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"placeholders_REPLACE_THESE",
-    "path":"folders/sprites/placeholders_REPLACE_THESE.yy",
+    "name":"phone",
+    "path":"folders/sprites/hud/phone.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
