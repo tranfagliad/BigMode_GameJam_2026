@@ -32,25 +32,26 @@ is_open = false;
 
 // Fake ID Details
 dl_number_prompt = "DL:";
-dl_number = "12345678";
+dl_number = global.id_details.dl_number;
 dob_prompt = "DOB:";
-dob = "01/04/1989";
+dob = global.id_details.dob;
 class_prompt = "Class:";
-class = "C";
+class = global.id_details.class;
 expire_prompt = "Exp:";
-expire = "01/04/2027";
+expire = global.id_details.expire;
 last_name = "SMITH";
-first_middle_name = "JOHN SLICK";
+first_middle_name = global.id_details.first_middle_name;
 sex_prompt = "Sex:";
-sex = "YES";
+sex = global.id_details.sex;
 hair_prompt = "Hair:";
-hair = "Slickback";
+hair = global.id_details.hair;
 eyes_prompt = "Eyes:";
-eyes = "HAS 2";
-weight_prompt = "WGT:";
-weight = "BIGMODE";
+eyes = global.id_details.eyes;
 height_prompt = "HGT:";
-height = "6'-7\"";
+height = global.id_details.height;
+weight_prompt = "WGT:";
+weight = global.id_details.weight;
+
 
 
 

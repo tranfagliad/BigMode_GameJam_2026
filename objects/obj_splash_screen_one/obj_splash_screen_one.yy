@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_character_creation_controller",
+  "%Name":"obj_splash_screen_one",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_character_creation_controller",
+  "name":"obj_splash_screen_one",
   "overriddenProperties":[],
   "parent":{
-    "name":"character_creation",
-    "path":"folders/objects/character_creation.yy",
+    "name":"splash_screens",
+    "path":"folders/objects/splash_screens.yy",
   },
   "parentObjectId":null,
   "persistent":false,
