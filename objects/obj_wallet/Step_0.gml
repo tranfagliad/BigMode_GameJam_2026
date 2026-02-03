@@ -78,6 +78,7 @@ if (is_open && !_just_opened)
             if (mouse_check_button_pressed(mb_left)) {
                 is_reading = true;
                 reading_sprite = _n.sprite;
+				reading_overlay = _n.overlay;
                 reading_frame = sprite_get_number(_n.sprite) - 1;
                 reading_target_y = (gui_h / 2) + 200; 
             }

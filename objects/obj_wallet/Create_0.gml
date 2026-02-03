@@ -62,6 +62,7 @@ notes = [];
 // Add the first note: Mom's Note
 array_push(notes, {
     sprite: spr_white_note,
+	overlay: spr_moms_note,
     offset_x: 145,
     offset_y: 152,
     x_scale: 2.5,
@@ -75,6 +76,7 @@ array_push(notes, {
 // Add the second note: Mysterious Yellow Tip Note
 array_push(notes, {
     sprite: spr_yellow_note,
+	overlay: noone,
     offset_x: -145,
     offset_y: 152,
     x_scale: 2.5,
@@ -89,6 +91,7 @@ array_push(notes, {
 // Add the third note: Tutorial Note
 array_push(notes, {
     sprite: spr_white_note,
+	overlay: noone,
     offset_x: -145,
     offset_y: 67,
     x_scale: 2.5,
