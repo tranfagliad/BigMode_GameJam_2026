@@ -63,7 +63,7 @@ notes = [];
 array_push(notes, {
     sprite: spr_white_note,
     offset_x: 145,
-    offset_y: 150,
+    offset_y: 152,
     x_scale: 2.5,
     y_scale: 0.5,
     frame: 0,
@@ -71,3 +71,43 @@ array_push(notes, {
     w: sprite_get_width(spr_white_note) * 2.5,
     h: sprite_get_height(spr_white_note) * 0.5
 });
+
+// Add the second note: Mysterious Yellow Tip Note
+array_push(notes, {
+    sprite: spr_yellow_note,
+    offset_x: -145,
+    offset_y: 152,
+    x_scale: 2.5,
+    y_scale: 0.5,
+    frame: 0,
+    anim_speed: 0.5,
+    w: sprite_get_width(spr_yellow_note) * 2.5,
+    h: sprite_get_height(spr_yellow_note) * 0.5
+});
+
+
+// Add the third note: Tutorial Note
+array_push(notes, {
+    sprite: spr_white_note,
+    offset_x: -145,
+    offset_y: 67,
+    x_scale: 2.5,
+    y_scale: 0.5,
+    frame: 0,
+    anim_speed: 0.5,
+    w: sprite_get_width(spr_yellow_note) * 2.5,
+    h: sprite_get_height(spr_yellow_note) * 0.5
+});
+
+
+// Note Pop-up
+is_reading = false;
+reading_sprite = -1;
+reading_y = gui_h + 500;
+reading_target_y = gui_h + 500;
+reading_lerp = 0.1;
+
+// Closing the note
+close_x = 0;
+close_y = 0;
+close_radius = 30;

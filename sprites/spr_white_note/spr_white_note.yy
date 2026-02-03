@@ -27,7 +27,7 @@
   ],
   "name":"spr_white_note",
   "nineSlice":null,
-  "origin":9,
+  "origin":7,
   "parent":{
     "name":"wallet",
     "path":"folders/sprites/hud/wallet.yy",

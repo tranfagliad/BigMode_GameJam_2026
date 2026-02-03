@@ -127,6 +127,7 @@
     {"id":{"name":"spr_leah","path":"sprites/spr_leah/spr_leah.yy",},},
     {"id":{"name":"spr_left_side_indicator","path":"sprites/spr_left_side_indicator/spr_left_side_indicator.yy",},},
     {"id":{"name":"spr_phone","path":"sprites/spr_phone/spr_phone.yy",},},
+    {"id":{"name":"spr_red_x","path":"sprites/spr_red_x/spr_red_x.yy",},},
     {"id":{"name":"spr_right_side_indicator","path":"sprites/spr_right_side_indicator/spr_right_side_indicator.yy",},},
     {"id":{"name":"spr_slickness_icon","path":"sprites/spr_slickness_icon/spr_slickness_icon.yy",},},
     {"id":{"name":"spr_start_button","path":"sprites/spr_start_button/spr_start_button.yy",},},

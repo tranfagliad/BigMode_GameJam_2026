@@ -66,5 +66,31 @@ if (is_open)
 
 
 
+// Full Screen Note
+if (reading_y < gui_h + 500)
+{
+    var _alpha = clamp(1 - (reading_y / gui_h), 0, 0.7);
+    draw_set_alpha(_alpha);
+    draw_set_color(c_black);
+    draw_rectangle(0, 0, gui_w, gui_h, false);
+    draw_set_alpha(1.0);
+
+    var _center_x = gui_w / 2;
+    var _note_scale = 6;
+    
+    draw_sprite_ext(reading_sprite, reading_frame, _center_x, reading_y+100, _note_scale, _note_scale, 0, c_white, 1);
+
+    var _note_w = sprite_get_width(reading_sprite) * _note_scale;
+    var _note_h = sprite_get_height(reading_sprite) * _note_scale;
+    
+    close_x = _center_x + (_note_w / 2) - 30;
+    close_y = reading_y+70;//reading_y - _note_h + 130;
+    
+	//draw_circle(close_x, close_y, close_radius, false);
+    draw_sprite_ext(spr_red_x, 0, close_x, close_y, 0.7, 0.7, 0, c_white, 1);
+}
+
+
+
 // Reset color
 draw_set_colour(c_white);
