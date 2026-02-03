@@ -3,6 +3,9 @@
 alpha = 1;
 fade_speed = 0.015;
 
+// Fade Out
+is_exiting = false;
+target_room = rm_CommonArea;
 
 
 // Music

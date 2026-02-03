@@ -29,6 +29,7 @@ var _clock_y = current_y + (clock_y_offset * phone_scale);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(c_white);
+draw_set_font(fnt_phone_clock);
 draw_text_transformed(_clock_x, _clock_y, _time_string, phone_scale * 0.3, phone_scale * 0.3, 0);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

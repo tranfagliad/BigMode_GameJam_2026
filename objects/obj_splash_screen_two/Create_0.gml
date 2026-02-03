@@ -1,6 +1,5 @@
 
-draw_set_font(fnt_splash_screen_two);
-draw_set_halign(fa_left);
+
 
 
 

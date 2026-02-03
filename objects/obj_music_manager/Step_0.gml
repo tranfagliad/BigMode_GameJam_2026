@@ -12,7 +12,7 @@ switch (room) {
 		break;
 		
     case rm_Kitchen:
-		target_vol = 0.1;
+		target_vol = 0.2;
 		target_cutoff = 600;
 		break;
 		
