@@ -58,6 +58,31 @@ if (mouse_check_button_pressed(mb_left)) {
 
 
 
+// Flashlight Waving Danger
+var _curr_mx = device_mouse_x_to_gui(0);
+var _curr_my = device_mouse_y_to_gui(0);
+
+if (flashlight_on)
+{
+    var _dist = point_distance(prev_mouse_x, prev_mouse_y, _curr_mx, _curr_my);
+    if (_dist > 1) {
+        danger_level += (_dist * flashlight_sensitivity);
+    }
+}
+prev_mouse_x = _curr_mx;
+prev_mouse_y = _curr_my;
+
+
+
+// Movement-Based Danger
+if (flashlight_on && instance_exists(obj_controller)) {
+    if (obj_controller.move_input != 0) {
+        danger_level += 0.5;
+    }
+}
+
+
+
 // Noise Detection
 if (mouse_check_button_pressed(mb_left)) {
     var _spike = 8;

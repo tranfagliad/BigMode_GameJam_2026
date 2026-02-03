@@ -37,6 +37,11 @@ flashlight_btn_x_offset = 21;
 flashlight_btn_y_offset = 6;
 flashlight_radius = 160;
 
+// Flashlight Movement Danger
+prev_mouse_x = device_mouse_x_to_gui(0);
+prev_mouse_y = device_mouse_y_to_gui(0);
+flashlight_sensitivity = 0.08;
+
 
 
 // Battery Position
@@ -77,6 +82,7 @@ danger_y_offset = 25;
 
 
 // Slickness Meter
-slickness_level = 0;   // 0 to 100, TODO: set this to the slickness level from the character creator
+var _slick_map = [25, 50, 75];
+slickness_level = _slick_map[global.id_details.slickness_level];
 slick_x_offset = 15;
 slickness_y_offset = 33;

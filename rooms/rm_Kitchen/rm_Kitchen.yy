@@ -8,6 +8,7 @@
   "instanceCreationOrder":[
     {"name":"inst_3D52D671","path":"rooms/rm_Kitchen/rm_Kitchen.yy",},
     {"name":"inst_D6601D9","path":"rooms/rm_Kitchen/rm_Kitchen.yy",},
+    {"name":"inst_3D8F956E","path":"rooms/rm_Kitchen/rm_Kitchen.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -22,6 +23,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"target_door_id","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"freezer_main",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"door_id","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"kitchen_to_freezer",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.5,"scaleY":3.5,"x":1040.0,"y":416.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3D8F956E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D8F956E","objectId":{"name":"obj_light_control","path":"objects/obj_light_control/obj_light_control.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":608.0,"y":32.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_67DD548C","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_67DD548C","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":2.5,"spriteId":{"name":"spr_label_Kitchen","path":"sprites/spr_label_Kitchen/spr_label_Kitchen.yy",},"x":544.0,"y":0.0,},

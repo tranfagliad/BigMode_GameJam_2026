@@ -31,6 +31,7 @@ is_open = false;
 
 
 // Fake ID Details
+slickness_level = global.id_details.slickness_level;
 dl_number_prompt = "DL:";
 dl_number = global.id_details.dl_number;
 dob_prompt = "DOB:";
@@ -39,7 +40,7 @@ class_prompt = "Class:";
 class = global.id_details.class;
 expire_prompt = "Exp:";
 expire = global.id_details.expire;
-last_name = "SMITH";
+last_name = global.id_details.last_name;
 first_middle_name = global.id_details.first_middle_name;
 sex_prompt = "Sex:";
 sex = global.id_details.sex;

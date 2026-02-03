@@ -1,4 +1,20 @@
 
+// Fade In/Out
+alpha = 1;
+fade_speed = 0.02;
+is_fading_out = false;
+
+
+
+// Submit Button
+submit_x = display_get_gui_width() - 150;
+submit_y = display_get_gui_height() - 100;
+submit_hover = 0;
+sw = sprite_get_width(spr_submit_button);
+sh = sprite_get_height(spr_submit_button);
+
+
+
 // Character Settings
 char_x = display_get_gui_width() / 2;
 char_y = (display_get_gui_height() / 2) + 50; 
@@ -17,14 +33,16 @@ slick_bar_width = 300;
 
 // ID
 id_scale = 2;
-mug_scale = 1.5;
-mug_x = char_x - 85;
+mug_scale = 1.7;
+mug_x = char_x - 84;
 mug_y = char_y - 132;
 
 
 
 // Selected Slickness ID Details
 global.id_details = {
+	slickness_level: 0,
+	
 	dl_number: "12345678",
 	dob: "01/04/1989",
 	class: "C",
@@ -84,6 +102,7 @@ details_column_offset = 60;
 details_line_height = 28;
 
 details_labels = ["LAST NAME", "FIRST/MID", "SEX", "HAIR", "EYES", "HGT", "WGT"];
+
 
 
 // Donor Heart

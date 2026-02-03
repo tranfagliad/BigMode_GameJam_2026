@@ -97,9 +97,22 @@ for (var i = 2; i < array_length(details_labels); i++) {
 }
 
 draw_sprite_ext(spr_id_donor_heart, 0, donor_x, donor_y, 1, 1, 0, c_white, 1);
-
-// Reset color
 draw_set_color(c_white);
-
 draw_set_font(fnt_id_donor_big);
 draw_text(donor_x + 1, donor_y + 15, "DONOR");
+
+
+
+// Draw Submit Button
+draw_sprite_ext(spr_submit_button, submit_hover, submit_x, submit_y, 1, 1, 0, c_white, 1);
+
+
+
+// Fade In
+if (alpha > 0) {
+    draw_set_alpha(alpha);
+    draw_set_color(c_black);
+    draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
+    draw_set_alpha(1);
+    draw_set_color(c_white);
+}

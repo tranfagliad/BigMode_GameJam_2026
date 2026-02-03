@@ -23,6 +23,9 @@ if (is_open)
         draw_sprite_ext(_n.sprite, floor(_n.frame), _draw_x + _n.offset_x, current_y + _n.offset_y, _n.x_scale, _n.y_scale, 0, c_white, 1);
     }
     
+	// Draw the ID mugshot
+	draw_sprite_ext(spr_character_mugshot, slickness_level, _draw_x-180, current_y+252, 1, 1, 0, c_white, 1);
+	
     // ID Text Details
     draw_set_colour(c_black);
     draw_set_font(fnt_id_name);
