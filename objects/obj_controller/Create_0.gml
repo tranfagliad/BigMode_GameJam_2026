@@ -16,3 +16,7 @@ room_camera_positions = {};
 
 global.target_door_id = "";
 global.phone_blocking_input = false;
+
+
+// Keep track of which rooms we entered for the first time
+global.sent_messages = {};

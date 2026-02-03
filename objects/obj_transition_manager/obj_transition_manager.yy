@@ -11,8 +11,8 @@
   "name":"obj_transition_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"rooms",
-    "path":"folders/objects/rooms.yy",
+    "name":"misc",
+    "path":"folders/objects/rooms/misc.yy",
   },
   "parentObjectId":null,
   "persistent":true,

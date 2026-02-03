@@ -20,8 +20,8 @@ is_hovered = false;
 
 // Side-to-Side Sway
 sway_x = 0;
-sway_lerp = 0.1;
-sway_intensity = 1.5;
+sway_lerp = 0.05;
+sway_intensity = 2;
 
 
 
@@ -56,15 +56,11 @@ decay_rate = 0.98;
 wave_timer = 0;
 segments = 21;
 spacing = 4 * phone_scale;
-
 green = #00FF00;
 red = #FF0000;
-
 intensity_multiplier = 0.05;
 intensity_min = 0;
 intensity_max = 1;
-
-// Vertical offset to place wave on the phone screen
 wave_center_y_offset = 18;
 
 
@@ -86,3 +82,15 @@ var _slick_map = [25, 50, 75];
 slickness_level = _slick_map[global.id_details.slickness_level];
 slick_x_offset = 15;
 slickness_y_offset = 33;
+
+
+
+// Message System
+messages = [];
+max_messages = 5;
+msg_line_height = 25;
+msg_x_offset = -40;
+msg_y_start_offset = 55;
+flash_timer = 0;
+flash_duration = 20;
+has_new_messages = false;

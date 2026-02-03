@@ -29,8 +29,7 @@ var _move_amount = 0;
 if (instance_exists(obj_controller)) {
     _move_amount = obj_controller.new_x - obj_controller.current_x;
 }
-
-var _target_sway_x = _move_amount * sway_intensity;
+var _target_sway_x = clamp(_move_amount * sway_intensity, -40, 40); 
 sway_x = lerp(sway_x, _target_sway_x, sway_lerp);
 
 
@@ -58,11 +57,10 @@ if (mouse_check_button_pressed(mb_left)) {
 
 
 
-// Flashlight Waving Danger
+// Flashlight Waving Danger, does NOT trigger in the Walk-In-Freezer
 var _curr_mx = device_mouse_x_to_gui(0);
 var _curr_my = device_mouse_y_to_gui(0);
-
-if (flashlight_on)
+if (flashlight_on && room != rm_WalkInFreezer)
 {
     var _dist = point_distance(prev_mouse_x, prev_mouse_y, _curr_mx, _curr_my);
     if (_dist > 1) {
@@ -75,7 +73,7 @@ prev_mouse_y = _curr_my;
 
 
 // Movement-Based Danger
-if (flashlight_on && instance_exists(obj_controller)) {
+if (flashlight_on && instance_exists(obj_controller) && room != rm_WalkInFreezer) {
     if (obj_controller.move_input != 0) {
         danger_level += 0.5;
     }
@@ -108,4 +106,18 @@ wave_timer += (0.1 + (current_noise * 0.05));
 if (danger_level >= 100 && !game_over_triggered) {
     show_debug_message("GAME OVER");
     game_over_triggered = true;
+}
+
+
+
+// Reset "New" Message
+if (current_y >= y_hidden - 2 && _target_y == y_hidden)
+{
+    if (variable_instance_exists(id, "phone_was_opened") && phone_was_opened) {
+        has_new_messages = false;
+        phone_was_opened = false;
+    }
+}
+if (current_y <= y_showing + 5) {
+    phone_was_opened = true;
 }
