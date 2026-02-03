@@ -40,7 +40,7 @@ flashlight_radius = 160;
 // Flashlight Movement Danger
 prev_mouse_x = device_mouse_x_to_gui(0);
 prev_mouse_y = device_mouse_y_to_gui(0);
-flashlight_sensitivity = 0.08;
+flashlight_sensitivity = 0.02;
 
 
 
