@@ -15,6 +15,7 @@ room_camera_positions = {};
 
 
 global.target_door_id = "";
+global.inventory = [];
 global.phone_blocking_input = false;
 
 

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.1214513,
+  "duration":0.81460315,
   "exportDir":"",
   "name":"snd_door_default",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_door_default.wav",
-  "volume":0.5,
+  "volume":1.0,
 }
