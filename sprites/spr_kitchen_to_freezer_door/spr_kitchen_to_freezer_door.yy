@@ -1,27 +1,27 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_bgr_kitchen",
-  "bboxMode":0,
-  "bbox_bottom":719,
+  "%Name":"spr_kitchen_to_freezer_door",
+  "bboxMode":2,
+  "bbox_bottom":444,
   "bbox_left":0,
-  "bbox_right":1279,
+  "bbox_right":262,
   "bbox_top":0,
-  "collisionKind":1,
+  "collisionKind":4,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"66624ba7-c30d-4362-bc65-030f8a7574f6","name":"66624ba7-c30d-4362-bc65-030f8a7574f6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7a900928-1542-404f-875d-71492cfba21e","name":"7a900928-1542-404f-875d-71492cfba21e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":720,
+  "height":445,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"73213627-4014-4e7d-a2a0-df657dd76812","blendMode":0,"displayName":"default","isLocked":false,"name":"73213627-4014-4e7d-a2a0-df657dd76812","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0dbd9c4c-3eb1-4f7a-a509-c31967250ca3","blendMode":0,"displayName":"default","isLocked":false,"name":"0dbd9c4c-3eb1-4f7a-a509-c31967250ca3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_bgr_kitchen",
+  "name":"spr_kitchen_to_freezer_door",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_bgr_kitchen",
+    "%Name":"spr_kitchen_to_freezer_door",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_bgr_kitchen",
+    "name":"spr_kitchen_to_freezer_door",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"66624ba7-c30d-4362-bc65-030f8a7574f6","path":"sprites/spr_bgr_kitchen/spr_bgr_kitchen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2eb09271-ffe3-4c50-88b2-3db102e656ef","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7a900928-1542-404f-875d-71492cfba21e","path":"sprites/spr_kitchen_to_freezer_door/spr_kitchen_to_freezer_door.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"992f43d8-b64f-4cab-b609-ecbe852ce191","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1280,
+  "width":263,
 }

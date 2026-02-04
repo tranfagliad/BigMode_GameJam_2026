@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_foot_steps",
+  "%Name":"snd_door_default",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.3625396,
+  "duration":1.1214513,
   "exportDir":"",
-  "name":"snd_foot_steps",
+  "name":"snd_door_default",
   "parent":{
     "name":"general",
     "path":"folders/sounds/general.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_foot_steps.wav",
-  "volume":0.8,
+  "soundFile":"snd_door_default.wav",
+  "volume":0.5,
 }
