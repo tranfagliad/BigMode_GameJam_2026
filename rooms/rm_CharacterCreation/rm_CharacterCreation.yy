@@ -18,8 +18,8 @@
   ],
   "name":"rm_CharacterCreation",
   "parent":{
-    "name":"rooms",
-    "path":"folders/rooms.yy",
+    "name":"menus",
+    "path":"folders/rooms/menus.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

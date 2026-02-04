@@ -20,8 +20,8 @@
   ],
   "name":"rm_MainMenu",
   "parent":{
-    "name":"rooms",
-    "path":"folders/rooms.yy",
+    "name":"menus",
+    "path":"folders/rooms/menus.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
