@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_foot_steps",
+  "%Name":"snd_freezer_door",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.647075,
+  "duration":1.4105215,
   "exportDir":"",
-  "name":"snd_foot_steps",
+  "name":"snd_freezer_door",
   "parent":{
-    "name":"general",
-    "path":"folders/sounds/general.yy",
+    "name":"walk_in_freezer",
+    "path":"folders/sounds/walk_in_freezer.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_foot_steps.wav",
-  "volume":0.75,
+  "soundFile":"snd_freezer_door.wav",
+  "volume":1.0,
 }
