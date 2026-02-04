@@ -102,14 +102,6 @@ wave_timer += (0.1 + (current_noise * 0.05));
 
 
 
-// IMPORTANT: Game Over check
-if (danger_level >= 100 && !game_over_triggered) {
-    show_debug_message("GAME OVER");
-    game_over_triggered = true;
-}
-
-
-
 // Reset "New" Message
 if (current_y >= y_hidden - 2 && _target_y == y_hidden)
 {

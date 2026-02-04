@@ -1,7 +1,29 @@
 
-transition_playing = false;
+// Game Over
+if (instance_exists(obj_phone)) {
+    if (obj_phone.danger_level >= 100) {
+        game_over_triggered = true;
+    }
+}
+if (game_over_triggered) {
+    fade_alpha += fade_speed;
+    audio_master_gain(1 - fade_alpha);
+    if (fade_alpha >= 1) {
+        audio_stop_all(); 
+        audio_master_gain(1);
+        with (all) {
+            if (id != other.id) instance_destroy();
+        }
+        room_goto(rm_GameOver);
+        instance_destroy(); 
+    }
+    exit; 
+}
+
+
 
 // Check if a transition is active
+transition_playing = false;
 if (instance_exists(obj_transition_manager)) {
     if (obj_transition_manager.transition_state != Transition.Idle) {
         transition_playing = true;

@@ -89,7 +89,7 @@ var _db_y = current_y + (danger_y_offset * phone_scale);
 draw_set_color(c_dkgray);
 draw_rectangle(_db_x, _db_y, _db_x + danger_bar_width, _db_y + danger_bar_height, false);
 var _fill_w = (danger_level / 100) * danger_bar_width;
-draw_set_color(c_yellow);
+draw_set_color(c_red);
 draw_rectangle(_db_x, _db_y, _db_x + _fill_w, _db_y + danger_bar_height, false);
 draw_set_color(c_white);
 draw_rectangle(_db_x, _db_y, _db_x + danger_bar_width, _db_y + danger_bar_height, true);
