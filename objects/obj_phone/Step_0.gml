@@ -1,10 +1,4 @@
 
-if (room == rm_MainMenu) {
-    exit;
-}
-
-
-
 var _mx = device_mouse_x_to_gui(0);
 var _my = device_mouse_y_to_gui(0);
 
@@ -94,11 +88,17 @@ if (mouse_check_button_pressed(mb_left)) {
 current_noise = clamp(current_noise, 0, 25);
 current_noise *= decay_rate;
 
-// Update the current danger level
-danger_level = clamp(danger_level - danger_decay, 0, 100);
-
 // Wave speed scales with noise
 wave_timer += (0.1 + (current_noise * 0.05));
+
+
+
+// Update the current danger level
+if (instance_exists(obj_controller) && obj_controller.game_over_triggered) {
+    danger_level = 100; // Force it to stay full at game over
+} else {
+    danger_level = clamp(danger_level - danger_decay, 0, 100);
+}
 
 
 

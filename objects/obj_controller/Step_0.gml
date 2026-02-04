@@ -3,6 +3,7 @@
 if (instance_exists(obj_phone)) {
     if (obj_phone.danger_level >= 100) {
         game_over_triggered = true;
+        move_input = 0; // Freeze movement on game over
     }
 }
 if (game_over_triggered) {

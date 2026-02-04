@@ -34,7 +34,7 @@ credits = [
     { name: "extonjunior", roles: "- Game Concept & Lore\n- Playtesting & QA" },
     { name: "rocket176", roles: "- Programming\n- HUD & Menu Design" },
     { name: "JoanofSnark", roles: "- Music / SFX\n- Game Mechanics Design" },
-    { name: "Ash", roles: "- Artwork\n- Backgrounds" },
+    { name: "Ash.Not Ketchum", roles: "- Artwork\n- Backgrounds" },
     { name: "Mikerio", roles: "- Artwork\n- Backgrounds" }
 ];
 

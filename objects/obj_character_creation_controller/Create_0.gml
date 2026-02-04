@@ -92,7 +92,7 @@ preset_id_details = [
 
 // ID Details Positioning
 header_x = mug_x + 75; 
-header_y = mug_y - 50;
+header_y = mug_y - 40;
 header_column_offset = 65;
 header_line_height = 28;
 

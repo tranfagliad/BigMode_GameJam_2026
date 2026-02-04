@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.647075,
+  "duration":1.3625396,
   "exportDir":"",
   "name":"snd_foot_steps",
   "parent":{
