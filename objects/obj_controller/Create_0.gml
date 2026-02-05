@@ -17,6 +17,7 @@ room_camera_positions = {};
 global.target_door_id = "";
 global.inventory = [];
 global.phone_blocking_input = false;
+global.keypad_active = false;
 
 
 // Keep track of which rooms we entered for the first time
