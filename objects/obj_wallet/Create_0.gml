@@ -73,9 +73,9 @@ array_push(notes, {
     h: sprite_get_height(spr_white_note) * 0.5
 });
 
-// Add the second note: Mysterious Yellow Tip Note
+// Add the second note: Tutorial Note
 array_push(notes, {
-    sprite: spr_yellow_note,
+    sprite: spr_white_note,
 	overlay: noone,
     offset_x: -145,
     offset_y: 152,
@@ -87,8 +87,7 @@ array_push(notes, {
     h: sprite_get_height(spr_yellow_note) * 0.5
 });
 
-
-// Add the third note: Tutorial Note
+/*
 array_push(notes, {
     sprite: spr_white_note,
 	overlay: noone,
@@ -101,7 +100,7 @@ array_push(notes, {
     w: sprite_get_width(spr_yellow_note) * 2.5,
     h: sprite_get_height(spr_yellow_note) * 0.5
 });
-
+*/
 
 // Note Pop-up
 is_reading = false;
