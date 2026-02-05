@@ -33,6 +33,7 @@ if (mouse_check_button_pressed(mb_left))
             } else if (_val == "Enter") {
                 if (input_string == correct_code)
 				{
+					global.vault_unlocked = true;
 					with(obj_vault)
 					{ 
 						is_open = true; 

@@ -13,6 +13,8 @@ if (is_reading)
     if (mouse_check_button_pressed(mb_left) && _dist < close_radius) {
         is_reading = false;
         reading_target_y = gui_h + 600;
+        var _snd = audio_play_sound(snd_note, 10, false);
+		audio_sound_pitch(_snd, 0.5);
     }
     exit; 
 }
@@ -80,7 +82,8 @@ if (is_open && !_just_opened)
                 reading_sprite = _n.sprite;
 				reading_overlay = _n.overlay;
                 reading_frame = sprite_get_number(_n.sprite) - 1;
-                reading_target_y = (gui_h / 2) + 200; 
+                reading_target_y = (gui_h / 2) + 200;
+                audio_play_sound(snd_note, 10, false);
             }
         } else {
             _n.frame = max(_n.frame - _n.anim_speed, 0);

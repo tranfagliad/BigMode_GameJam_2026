@@ -10,14 +10,16 @@ current_x = 0;
 new_x = 0;
 
 transition_playing = false;
-
 room_camera_positions = {};
+
 
 
 global.target_door_id = "";
 global.inventory = [];
 global.phone_blocking_input = false;
 global.keypad_active = false;
+global.vault_unlocked = false;
+
 
 
 // Keep track of which rooms we entered for the first time
@@ -25,7 +27,7 @@ global.sent_messages = {};
 
 
 
-// Game Over / Victory
+// Game Over
 game_over_triggered = false;
 fade_alpha = 0;
 fade_speed = 0.01;
