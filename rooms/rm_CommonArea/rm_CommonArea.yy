@@ -15,11 +15,17 @@
     {"name":"inst_3951C5DE","path":"rooms/rm_CommonArea/rm_CommonArea.yy",},
     {"name":"inst_2550ADBC","path":"rooms/rm_CommonArea/rm_CommonArea.yy",},
     {"name":"inst_A1323FD","path":"rooms/rm_CommonArea/rm_CommonArea.yy",},
+    {"name":"inst_16D881A2","path":"rooms/rm_CommonArea/rm_CommonArea.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_1E25E944","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E25E944","objectId":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":1120.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_16D881A2","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16D881A2","objectId":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"propertyId":{"name":"key_id","path":"objects/obj_key/obj_key.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"kitchen_key",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"propertyId":{"name":"collect_sound","path":"objects/obj_key/obj_key.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"propertyId":{"name":"key_sprite","path":"objects/obj_key/obj_key.yy",},"resource":{"name":"spr_key_to_kitchen","path":"sprites/spr_key_to_kitchen/spr_key_to_kitchen.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_key_to_kitchen",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":256.0,},
         {"$GMRInstance":"v4","%Name":"inst_5D67560B","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D67560B","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"target_room","path":"objects/obj_door/obj_door.yy",},"resource":{"name":"rm_Kitchen","path":"rooms/rm_Kitchen/rm_Kitchen.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_Kitchen",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"door_id","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"common_side",},

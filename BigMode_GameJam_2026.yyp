@@ -150,6 +150,7 @@
     {"id":{"name":"spr_door_b","path":"sprites/spr_door_b/spr_door_b.yy",},},
     {"id":{"name":"spr_flashlight_button","path":"sprites/spr_flashlight_button/spr_flashlight_button.yy",},},
     {"id":{"name":"spr_id_donor_heart","path":"sprites/spr_id_donor_heart/spr_id_donor_heart.yy",},},
+    {"id":{"name":"spr_key_to_kitchen","path":"sprites/spr_key_to_kitchen/spr_key_to_kitchen.yy",},},
     {"id":{"name":"spr_kitchen_to_common_area_door","path":"sprites/spr_kitchen_to_common_area_door/spr_kitchen_to_common_area_door.yy",},},
     {"id":{"name":"spr_kitchen_to_freezer_door","path":"sprites/spr_kitchen_to_freezer_door/spr_kitchen_to_freezer_door.yy",},},
     {"id":{"name":"spr_label_CommonArea","path":"sprites/spr_label_CommonArea/spr_label_CommonArea.yy",},},
