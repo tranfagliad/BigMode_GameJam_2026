@@ -1,6 +1,20 @@
 
-if (global.phone_blocking_input) {
+if (global.phone_blocking_input || global.keypad_active) {
 	exit;
+}
+
+
+
+// Cannot click the vault if the painting is on top
+if (instance_exists(obj_vault_painting)) {
+    exit;
+}
+
+
+
+// Prevent click-through when the painting is removed
+if (instance_exists(obj_vault_painting) || just_revealed_timer > 0) {
+    exit;
 }
 
 

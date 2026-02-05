@@ -10,11 +10,13 @@
     {"name":"inst_2C3B51E1","path":"rooms/rm_Office/rm_Office.yy",},
     {"name":"inst_5A925D42","path":"rooms/rm_Office/rm_Office.yy",},
     {"name":"inst_6325A0DA","path":"rooms/rm_Office/rm_Office.yy",},
+    {"name":"inst_48325F03","path":"rooms/rm_Office/rm_Office.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Lighting","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_6325A0DA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6325A0DA","objectId":{"name":"obj_light_control","path":"objects/obj_light_control/obj_light_control.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":544.0,"y":32.0,},
+        {"$GMRInstance":"v4","%Name":"inst_48325F03","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_48325F03","objectId":{"name":"obj_vault_painting","path":"objects/obj_vault_painting/obj_vault_painting.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":2.0,"x":1088.0,"y":288.0,},
       ],"layers":[],"name":"Lighting","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_1525C903","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1525C903","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[
