@@ -12,8 +12,8 @@ if (!array_contains(global.inventory, key_id))
     
     //audio_play_sound(snd_collect_sound, 10, false); 
     
-    // Optional: Feedback message
-    // show_debug_message("Picked up: " + item_name);
+    // Debugging
+	show_debug_message(global.inventory);
     
     instance_destroy();
 }

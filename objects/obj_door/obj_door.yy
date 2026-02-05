@@ -33,6 +33,7 @@
     {"$GMObjectProperty":"v2","%Name":"target_door_id","filters":[],"listItems":[],"multiselect":false,"name":"target_door_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"is_locked","filters":[],"listItems":[],"multiselect":false,"name":"is_locked","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"key_needed","filters":[],"listItems":[],"multiselect":false,"name":"key_needed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"door_sound","filters":[],"listItems":[],"multiselect":false,"name":"door_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_door_default","path":"sounds/snd_door_default/snd_door_default.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_door_default","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -126,6 +126,7 @@
     {"id":{"name":"scr_messages","path":"scripts/scr_messages/scr_messages.yy",},},
     {"id":{"name":"snd_bgr_music","path":"sounds/snd_bgr_music/snd_bgr_music.yy",},},
     {"id":{"name":"snd_door_default","path":"sounds/snd_door_default/snd_door_default.yy",},},
+    {"id":{"name":"snd_door_unlock_click","path":"sounds/snd_door_unlock_click/snd_door_unlock_click.yy",},},
     {"id":{"name":"snd_foot_steps","path":"sounds/snd_foot_steps/snd_foot_steps.yy",},},
     {"id":{"name":"snd_freezer_bgr","path":"sounds/snd_freezer_bgr/snd_freezer_bgr.yy",},},
     {"id":{"name":"snd_freezer_door","path":"sounds/snd_freezer_door/snd_freezer_door.yy",},},
