@@ -11,7 +11,7 @@ draw_sprite_ext(spr_vault_keypad_UI, 0, ui_x, ui_y, ui_scale, ui_scale, 0, c_whi
 
 
 
-// Draw LCD Text
+// Draw entered numbers
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(c_lime);
@@ -20,6 +20,7 @@ draw_text_transformed(ui_x, _lcd_y, input_string, 2, 2, 0);
 
 
 
+// Draw the buttons
 for (var i = 0; i < array_length(buttons); i++)
 {
     var _b = buttons[i];
@@ -38,9 +39,6 @@ for (var i = 0; i < array_length(buttons); i++)
         draw_set_color(c_black);
         draw_text_transformed(_tx, _ty, _b.val, 1.2, 1.2, 0);
     } else {
-        draw_set_color(c_red);
-        draw_rectangle(_bx1-1, _by1+2, _bx2-1, _by2+2, true); // 'true' makes it an outline
-        draw_text(_tx-1, _ty-1, "X");
-		draw_set_color(c_white);
+        draw_sprite_ext(spr_red_x, 0, _tx-5, _ty+5, 0.7, 0.7, 0, c_white, 1);
     }
 }
