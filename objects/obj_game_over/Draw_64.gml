@@ -1,6 +1,4 @@
 
-
-
 // Draw the text
 draw_set_alpha(text_alpha);
 draw_set_font(fnt_game_over);

@@ -85,6 +85,7 @@
     {"id":{"name":"fnt_phone_clock","path":"fonts/fnt_phone_clock/fnt_phone_clock.yy",},},
     {"id":{"name":"fnt_splash_screen_two","path":"fonts/fnt_splash_screen_two/fnt_splash_screen_two.yy",},},
     {"id":{"name":"fnt_text_message","path":"fonts/fnt_text_message/fnt_text_message.yy",},},
+    {"id":{"name":"fnt_victory_message","path":"fonts/fnt_victory_message/fnt_victory_message.yy",},},
     {"id":{"name":"obj_character_creation_controller","path":"objects/obj_character_creation_controller/obj_character_creation_controller.yy",},},
     {"id":{"name":"obj_common_area","path":"objects/obj_common_area/obj_common_area.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
