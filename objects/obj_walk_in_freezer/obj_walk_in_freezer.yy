@@ -12,8 +12,8 @@
   "name":"obj_walk_in_freezer",
   "overriddenProperties":[],
   "parent":{
-    "name":"rooms",
-    "path":"folders/objects/rooms.yy",
+    "name":"walk_in_freezer",
+    "path":"folders/objects/rooms/walk_in_freezer.yy",
   },
   "parentObjectId":null,
   "persistent":false,

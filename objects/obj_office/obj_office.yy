@@ -10,8 +10,8 @@
   "name":"obj_office",
   "overriddenProperties":[],
   "parent":{
-    "name":"rooms",
-    "path":"folders/objects/rooms.yy",
+    "name":"office",
+    "path":"folders/objects/rooms/office.yy",
   },
   "parentObjectId":null,
   "persistent":false,

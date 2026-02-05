@@ -10,8 +10,8 @@
   "name":"obj_common_area",
   "overriddenProperties":[],
   "parent":{
-    "name":"rooms",
-    "path":"folders/objects/rooms.yy",
+    "name":"common_area",
+    "path":"folders/objects/rooms/common_area.yy",
   },
   "parentObjectId":null,
   "persistent":false,
