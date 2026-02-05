@@ -15,28 +15,25 @@ if (!variable_global_exists("door_states")) {
 
 
 
-
+// Locked / Unlock door
 if (door_id != "" && struct_exists(global.door_states, door_id)) {
     is_locked = false;
 }
-
-
-
-// Locked / Unlock door
 if (is_locked)
 {
     if (key_needed != "" && array_contains(global.inventory, key_needed))
-	{
+    {
         is_locked = false;   
         audio_play_sound(snd_door_unlock_click, 10, false); 
-        
         if (door_id != "") {
-			struct_set(global.door_states, door_id, true);
-		}
-        
-        show_debug_message("SUCCESS: Door unlocked with key. Click again to enter.");
+            struct_set(global.door_states, door_id, true);
+        }
+        //show_debug_message("SUCCESS: Door unlocked with key. Click again to enter.");
         exit; 
     } else {
+        if (locked_sound != noone) {
+            audio_play_sound(locked_sound, 10, false); 
+        }
         show_debug_message("FAIL: Still locked. Key needed: " + string(key_needed));
         exit; 
     }
