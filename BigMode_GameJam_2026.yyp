@@ -151,6 +151,7 @@
     {"id":{"name":"spr_bigmode","path":"sprites/spr_bigmode/spr_bigmode.yy",},},
     {"id":{"name":"spr_character_id","path":"sprites/spr_character_id/spr_character_id.yy",},},
     {"id":{"name":"spr_character_mugshot","path":"sprites/spr_character_mugshot/spr_character_mugshot.yy",},},
+    {"id":{"name":"spr_common_area_to_kitchen_door","path":"sprites/spr_common_area_to_kitchen_door/spr_common_area_to_kitchen_door.yy",},},
     {"id":{"name":"spr_danger_icon","path":"sprites/spr_danger_icon/spr_danger_icon.yy",},},
     {"id":{"name":"spr_door_a","path":"sprites/spr_door_a/spr_door_a.yy",},},
     {"id":{"name":"spr_door_b","path":"sprites/spr_door_b/spr_door_b.yy",},},

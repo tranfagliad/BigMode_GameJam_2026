@@ -1,7 +1,7 @@
 //window_set_showborder(false);
 
 camera = view_camera[0];
-camera_move_speed = 5;
+camera_move_speed = 3;
 camera_smooth_factor = 0.1;
 
 move_input = 0;
