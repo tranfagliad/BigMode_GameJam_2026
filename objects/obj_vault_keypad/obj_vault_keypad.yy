@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_vault_keypad_UI",
-    "path":"sprites/spr_vault_keypad_UI/spr_vault_keypad_UI.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

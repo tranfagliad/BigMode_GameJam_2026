@@ -4,7 +4,7 @@ if (global.vault_painting_removed) {
     instance_destroy();
 }
 
-
+image_angle += 1;
 
 depth = obj_vault.depth - 10;
 click_count = 0;
