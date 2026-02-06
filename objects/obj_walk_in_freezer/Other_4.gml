@@ -8,4 +8,4 @@ freezer_loop = audio_play_sound_on(freezer_emitter, snd_freezer_bgr, true, 10);
 
 // Fade in
 audio_emitter_gain(freezer_emitter, 0);
-audio_emitter_gain(freezer_emitter, 1, 1500);
+audio_emitter_gain(freezer_emitter, 1.5, 1500);

@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_kitchen_key",
   "bboxMode":0,
-  "bbox_bottom":63,
-  "bbox_left":16,
-  "bbox_right":47,
+  "bbox_bottom":33,
+  "bbox_left":8,
+  "bbox_right":39,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -14,9 +14,9 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"edcba1c9-76a2-453f-89e2-0c9e8a1199b0","name":"edcba1c9-76a2-453f-89e2-0c9e8a1199b0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
-  "height":64,
+  "gridX":4,
+  "gridY":4,
+  "height":34,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"5a5524cb-5ee6-4953-89c6-4ffa6b6b1463","blendMode":0,"displayName":"default","isLocked":false,"name":"5a5524cb-5ee6-4953-89c6-4ffa6b6b1463","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":48,
 }

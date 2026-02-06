@@ -5,6 +5,7 @@ freezer_muffle = audio_effect_create(AudioEffectType.LPF2);
 freezer_muffle.cutoff = 500; 
 freezer_muffle.q = 1.0;
 freezer_bus.effects[0] = freezer_muffle;
+freezer_bus.gain = 1.5;   // Volume
 
 
 

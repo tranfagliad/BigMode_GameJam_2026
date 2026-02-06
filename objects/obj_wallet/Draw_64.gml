@@ -25,7 +25,7 @@ if (is_open)
 	
 	// Draw the kitchen key if the player has it
 	if (array_contains(global.inventory, "kitchen_key")) {
-		draw_sprite_ext(spr_kitchen_key, 0, _draw_x, current_y, 2, 2, 0, c_white, 1);
+		draw_sprite_ext(spr_kitchen_key, 0, _draw_x+100, current_y, 2, 2, 0, c_white, 1);
 	}
     
 	// Draw the ID mugshot

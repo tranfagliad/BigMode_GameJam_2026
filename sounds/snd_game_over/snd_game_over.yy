@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_game_over",
   "parent":{
-    "name":"sounds",
-    "path":"folders/sounds.yy",
+    "name":"general",
+    "path":"folders/sounds/general.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
