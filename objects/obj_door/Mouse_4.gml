@@ -34,7 +34,7 @@ if (is_locked)
         if (locked_sound != noone) {
             audio_play_sound(locked_sound, 10, false); 
         }
-        show_debug_message("FAIL: Still locked. Key needed: " + string(key_needed));
+        //show_debug_message("FAIL: Still locked. Key needed: " + string(key_needed));
         exit; 
     }
 }
