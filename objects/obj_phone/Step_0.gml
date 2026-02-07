@@ -58,7 +58,11 @@ if (flashlight_on && room != rm_WalkInFreezer)
 {
     var _dist = point_distance(prev_mouse_x, prev_mouse_y, _curr_mx, _curr_my);
     if (_dist > 1) {
-        danger_level += (_dist * flashlight_sensitivity);
+		if (global.reading_note || global.keypad_active) {
+			danger_level += (_dist * flashlight_sensitivity) * 0.5;
+		} else {
+			danger_level += (_dist * flashlight_sensitivity);
+		}
     }
 }
 prev_mouse_x = _curr_mx;
