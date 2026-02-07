@@ -13,8 +13,11 @@ if (anim_state != "hidden" && reading_sprite != noone)
 	
     // Draw the Note
     var _n_scale = 0.5; 
-    draw_sprite_ext(reading_sprite, 0, _gw / 2, anim_y - 300, _n_scale, _n_scale, 0, c_white, 1);
+    draw_sprite_ext(reading_sprite, 0, _gw / 2, anim_y, _n_scale, _n_scale, 0, c_white, 1);
 
     // Draw Red X
-    draw_sprite_ext(spr_red_x, 0, close_button_x, close_button_y, 0.6, 0.6, 0, c_white, 1);
+    if (anim_state == "reading" || anim_state == "closing") {
+        var _btn_scale = 0.6;
+        draw_sprite_ext(spr_red_x, 0, close_button_x, close_button_y, _btn_scale, _btn_scale, 0, c_white, _fade);
+    }
 }

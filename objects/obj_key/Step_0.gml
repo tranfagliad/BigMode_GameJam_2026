@@ -7,16 +7,17 @@ var _my = device_mouse_y_to_gui(0);
 
 
 // Animation
-if (anim_state == "opening") {
-    var _note_target = _gh;
+if (anim_state == "opening") 
+{
+    var _note_target = _gh - 300; 
     anim_y = lerp(anim_y, _note_target, 0.15);
-    
     if (abs(anim_y - _note_target) < 1) {
         anim_y = _note_target;
         anim_state = "reading";
     }
-} 
-else if (anim_state == "closing") {
+}
+else if (anim_state == "closing")
+{
     anim_y = lerp(anim_y, _gh + 600, 0.15);
     if (anim_y > _gh + 550) {
         instance_destroy();
@@ -25,25 +26,23 @@ else if (anim_state == "closing") {
 
 
 
-// Red X Logic
+// Red X
 if (anim_state != "hidden")
 {
-    var _n_scale = 1.0; 
-    var _n_w = sprite_get_width(reading_sprite) * _n_scale;
-    var _btn_sz = sprite_get_width(spr_red_x) * 0.6;
-    
+    var _btn_scale = 0.6;
+    var _btn_sz = sprite_get_width(spr_red_x) * _btn_scale;
 
-    close_button_x = (_gw / 2) + (_n_w / 2) - _btn_sz;
-    if (anim_state == "opening" || anim_state == "reading") {
-        close_button_y = 60;
-    } else {
-        close_button_y = anim_y - _gh + 60;
-    }
+    close_button_x = (_gw / 2) - (_btn_sz / 2);
+    close_button_y = _gh - _btn_sz - 30;
 
     if (anim_state == "reading" && mouse_check_button_pressed(mb_left)) {
-        if (point_in_rectangle(_mx, _my, close_button_x-20, close_button_y-20, close_button_x+_btn_sz+20, close_button_y+_btn_sz+20)) {
+        var _p = 20;
+        if (point_in_rectangle(_mx, _my, close_button_x - _p, close_button_y - _p, close_button_x + _btn_sz + _p, close_button_y + _btn_sz + _p)) {
             anim_state = "closing";
             global.reading_note = false;
+            
+            var _snd = audio_play_sound(snd_note, 10, false);
+            audio_sound_pitch(_snd, 0.5);
         }
     }
 }
