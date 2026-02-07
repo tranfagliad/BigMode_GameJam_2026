@@ -1,4 +1,3 @@
-//window_set_showborder(false);
 
 camera = view_camera[0];
 camera_move_speed = 3;

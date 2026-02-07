@@ -29,7 +29,11 @@ if (is_open)
 	}
     
 	// Draw the ID mugshot
-	draw_sprite_ext(spr_character_mugshot, slickness_level, _draw_x-180, current_y+252, 1, 1, 0, c_white, 1);
+	if (array_contains(global.inventory, "apron")) {
+		draw_sprite_ext(spr_character_mugshot_with_apron, slickness_level, _draw_x-177, current_y+288, 0.15, 0.15, 0, c_white, 1);
+	} else {
+		draw_sprite_ext(spr_character_mugshot, slickness_level, _draw_x-177, current_y+288, 0.15, 0.15, 0, c_white, 1);
+	}
 	
     // ID Text Details
     draw_set_colour(c_black);
