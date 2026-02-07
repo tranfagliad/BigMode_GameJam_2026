@@ -1,19 +1,24 @@
-
 if (global.phone_blocking_input || global.keypad_active) {
-	exit;
+    exit;
 }
 
-
-
-// Add this specific key to inventory
 if (!array_contains(global.inventory, key_id))
 {
-    array_push(global.inventory, key_id);
+    show_debug_message("Key clicked: " + string(key_id));
+    show_debug_message("Has Note: " + string(has_note));
+	
+	array_push(global.inventory, key_id);
     
-    //audio_play_sound(snd_collect_sound, 10, false); 
-    
-    // Debugging
-	show_debug_message(global.inventory);
-    
-    instance_destroy();
+    if (has_note)
+    {
+        anim_state = "opening";
+        // Start anim_y off-screen so it has somewhere to slide FROM
+        anim_y = display_get_gui_height() + 500; 
+        
+        is_reading = true;
+        global.reading_note = true;
+        x = -1000; // Teleport the "world" object away
+    } else {
+        instance_destroy();
+    }
 }

@@ -15,6 +15,7 @@ if (anim_state == "hidden" && !global.reading_note && mouse_check_button_pressed
         anim_state = "opening";
         is_reading = true;
         global.reading_note = true;
+		audio_play_sound(snd_note, 10, false);
     }
 }
 
@@ -62,6 +63,8 @@ if (anim_state != "hidden")
                                close_button_y + close_button_size + _p))
         {
             anim_state = "closing";
+			var _snd = audio_play_sound(snd_note, 10, false);
+			audio_sound_pitch(_snd, 0.5);
         }
     }
 }
