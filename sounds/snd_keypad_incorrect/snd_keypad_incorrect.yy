@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_freezer_door",
+  "%Name":"snd_keypad_incorrect",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.81600904,
+  "duration":0.9124943,
   "exportDir":"",
-  "name":"snd_freezer_door",
+  "name":"snd_keypad_incorrect",
   "parent":{
-    "name":"walk_in_freezer",
-    "path":"folders/sounds/walk_in_freezer.yy",
+    "name":"office",
+    "path":"folders/sounds/office.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_freezer_door.wav",
+  "soundFile":"snd_keypad_incorrect.wav",
   "volume":1.0,
 }

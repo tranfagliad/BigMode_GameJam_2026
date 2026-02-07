@@ -85,7 +85,7 @@ if (mouse_check_button_pressed(mb_left)) {
 }
 
 // Decay noise
-current_noise = clamp(current_noise, 0, 25);
+current_noise = clamp(current_noise, 0, 30);
 current_noise *= decay_rate;
 
 // Wave speed scales with noise

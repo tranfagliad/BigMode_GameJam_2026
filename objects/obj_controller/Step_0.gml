@@ -32,7 +32,7 @@ if (instance_exists(obj_transition_manager)) {
 }
 
 // Handle Input and Camera only if no transition is playing
-if (!transition_playing && !global.keypad_active) {
+if (!transition_playing && !global.keypad_active && !global.reading_note) {
     move_input = keyboard_check(ord("D")) - keyboard_check(ord("A"));
     
     target_x += move_input * camera_move_speed;

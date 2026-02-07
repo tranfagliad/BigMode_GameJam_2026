@@ -22,41 +22,56 @@ if (mouse_check_button_pressed(mb_left))
         var _x2 = ui_x + _b.x2;
         var _y2 = ui_y + _b.y2;
 
-        if (point_in_rectangle(_mx, _my, _x1, _y1, _x2, _y2)) {
-            var _val = _b.val;
+        if (point_in_rectangle(_mx, _my, _x1, _y1, _x2, _y2))
+		{
+		    var _val = _b.val;
+    
+		    if (_val == "X") {
+		        instance_destroy();
+		    } 
+		    else if (_val == "Clear") {
+		        input_string = "";
+		        // Play random beep for clearing
+		        audio_play_sound(choose(snd_keypad_1, snd_keypad_2), 10, false);
+		    } 
+		    else if (_val == "Enter")
+			{
+		        if (input_string == correct_code) {   // Correct Code
+		            global.vault_unlocked = true;
+		            audio_play_sound(snd_keypad_correct, 20, false);
             
-            if (_val == "X") {
-                instance_destroy();
-            } else if (_val == "Clear") {
-                input_string = "";
-                //audio_play_sound(snd_keypad_beep, 10, false);
-            } else if (_val == "Enter") {
-                if (input_string == correct_code)
-				{
-					global.vault_unlocked = true;
-					with(obj_vault)
-					{ 
-						is_open = true; 
-						image_index = 1; 
-						if (!instance_exists(obj_vault_note)) {
-							var _cx = x + (sprite_width / 2);
-							var _cy = y + (sprite_height / 2);
-							instance_create_depth(_cx, _cy, depth - 100, obj_vault_note);
-						}
-					}
-        
-					// audio_play_sound(snd_vault_open, 10, false);
-					instance_destroy();
-				} else {
-					input_string = "";   // Wrong code
-				}
-			} else { // Numbers
-                if (string_length(input_string) < max_digits) {
-                    input_string += _val;
-                    //audio_play_sound(snd_keypad_beep, 10, false);
-                }
-            }
-            break;
-        }
+		            with(obj_vault) { 
+		                is_open = true; 
+		                image_index = 1; 
+		                if (!instance_exists(obj_vault_note)) {
+		                    var _cx = x + (sprite_width / 2);
+		                    var _cy = y + (sprite_height / 2);
+		                    instance_create_depth(_cx, _cy, depth - 100, obj_vault_note);
+		                }
+		            }
+		            instance_destroy();
+		        } 
+		        else {   // Incorrect Code
+		            input_string = "";
+				    audio_play_sound(snd_keypad_incorrect, 20, false);
+				    if (instance_exists(obj_phone))
+				    {
+				        with (obj_phone)
+						{
+				            current_noise += other.fail_spike;
+				            danger_level += other.danger_penalty + (current_noise * 0.5); 
+				        }
+				    }
+		        }
+		    } 
+		    else
+			{
+		        if (string_length(input_string) < max_digits) {
+		            input_string += _val;
+		            audio_play_sound(choose(snd_keypad_1, snd_keypad_2), 10, false);
+		        }
+		    }
+		    break;
+		}
     }
 }

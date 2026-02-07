@@ -20,6 +20,12 @@ max_digits = 4;
 
 
 
+// Noise and danger penalty for wrong code
+fail_spike = 15;
+danger_penalty = 25;
+
+
+
 var _sw = sprite_get_width(spr_vault_keypad_UI) * ui_scale;
 var _sh = sprite_get_height(spr_vault_keypad_UI) * ui_scale;
 var _grid_w = _sw * 0.8; 
