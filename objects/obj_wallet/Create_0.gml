@@ -89,8 +89,8 @@ array_push(notes, {
 	full_note_y_scale: 0.21,
     frame: 0,
     anim_speed: 0.5,
-    w: sprite_get_width(spr_yellow_note) * 2.5,
-    h: sprite_get_height(spr_yellow_note) * 0.5
+    w: sprite_get_width(spr_code_mini_note) * 2.5,
+    h: sprite_get_height(spr_code_mini_note) * 0.5
 });
 
 /*

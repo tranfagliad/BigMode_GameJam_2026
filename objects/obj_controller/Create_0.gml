@@ -18,6 +18,7 @@ global.target_door_id = "";
 global.inventory = [];
 global.door_states = {};
 global.phone_blocking_input = false;
+global.wallet_blocking_input = false;
 global.keypad_active = false;
 global.vault_unlocked = false;
 global.vault_painting_removed = false;

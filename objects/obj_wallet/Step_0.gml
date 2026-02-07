@@ -4,17 +4,37 @@ var _my = device_mouse_y_to_gui(0);
 
 
 
-// Big Note animation
+// Hover & Blocking Logic
+var _x1 = is_open ? (wallet_x - (wallet_width / 2)) : wallet_x; 
+var _x2 = wallet_x + (wallet_width / 2);
+var _y1 = current_y; 
+var _y2 = gui_h; 
+is_hovered = point_in_rectangle(_mx, _my, _x1, _y1, _x2, _y2);
+
+
+
+// Update global toggles
+global.wallet_blocking_input = is_hovered;
+global.phone_blocking_input = is_hovered || global.phone_blocking_input; 
+
+
+
+// Big Note / Red X
 reading_y = lerp(reading_y, reading_target_y, reading_lerp);
 if (is_reading)
 {
-    global.phone_blocking_input = true;
+    var _center_x = gui_w / 2;
+    var _note_w = sprite_get_width(reading_sprite) * 6;
+    
+    // Red X
+    close_x = _center_x + (_note_w / 2) - 140;
+    close_y = reading_y + 70;
     var _dist = point_distance(_mx, _my, close_x, close_y);
     if (mouse_check_button_pressed(mb_left) && _dist < close_radius) {
         is_reading = false;
         reading_target_y = gui_h + 600;
         var _snd = audio_play_sound(snd_note, 10, false);
-		audio_sound_pitch(_snd, 0.5);
+        audio_sound_pitch(_snd, 0.5);
     }
     exit; 
 }

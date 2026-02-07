@@ -6,11 +6,11 @@ var _gw = display_get_gui_width();
 
 
 
-// Detect Click in the OVerworld
+// Detect Click in the Overworld
 if (anim_state == "hidden" && !global.reading_note)
 {
-    // Check if we clicked AND ensure the phone isn't blocking us
-    if (mouse_check_button_pressed(mb_left) && !global.phone_blocking_input) 
+    // Check if we clicked AND ensure neither the phone NOR the wallet is blocking us
+    if (mouse_check_button_pressed(mb_left) && !global.phone_blocking_input && !global.wallet_blocking_input) 
     {
         var _w = (sprite_get_width(overworld_sprite) * 0.5);
         var _h = (sprite_get_height(overworld_sprite) * 0.5);
