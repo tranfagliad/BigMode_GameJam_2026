@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_game_over",
+  "%Name":"fnt_game_title",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":37,
@@ -249,10 +249,10 @@
   "last":0,
   "lineHeight":46,
   "maintainGms1Font":false,
-  "name":"fnt_game_over",
+  "name":"fnt_game_title",
   "parent":{
-    "name":"fonts",
-    "path":"folders/fonts.yy",
+    "name":"screens",
+    "path":"folders/fonts/screens.yy",
   },
   "pointRounding":0,
   "ranges":[

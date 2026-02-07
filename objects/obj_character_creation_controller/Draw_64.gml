@@ -39,8 +39,6 @@ if (slickness_level == 0) {
 } else {
 	draw_set_font(fnt_character_creator_3);
 }
-	
-//draw_set_font(fnt_character_creator_2);
 draw_text(slick_bar_x, slick_bar_y - 80, "Slickness Level");
 
 

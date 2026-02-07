@@ -120,8 +120,8 @@
   "maintainGms1Font":false,
   "name":"fnt_splash_screen_two",
   "parent":{
-    "name":"fonts",
-    "path":"folders/fonts.yy",
+    "name":"screens",
+    "path":"folders/fonts/screens.yy",
   },
   "pointRounding":0,
   "ranges":[

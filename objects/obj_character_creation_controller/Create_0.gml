@@ -33,7 +33,7 @@ slick_bar_width = 300;
 
 // ID
 id_scale = 2;
-mug_scale = 1.7;
+mug_scale = 0.27;
 mug_x = char_x - 84;
 mug_y = char_y - 132;
 
@@ -71,7 +71,7 @@ preset_id_details = [
 	{
 		last_name: "WAKE",
 		first_middle_name: "JOHN ALAN",
-		sex: "MAYBE",
+		sex: "PERHAPS",
 		hair: "Exists",
 		eyes: "Has 2",
 		height: "6' 7\"",

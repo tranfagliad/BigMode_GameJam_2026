@@ -1,4 +1,9 @@
 
+gui_w = display_get_gui_width();
+title_y = 30;
+
+
+
 // Fade In
 alpha = 1;
 fade_speed = 0.015;
@@ -21,8 +26,8 @@ audio_sound_gain(music_instance, music_volume, 0);
 
 
 // Button Settings
-btn_x = display_get_gui_width() / 2;
-btn_y = display_get_gui_height() / 2 + 50;
+btn_x = display_get_gui_width() - 150;
+btn_y = (display_get_gui_height() / 2) - 20;
 btn_w = sprite_get_width(spr_start_button);
 btn_h = sprite_get_height(spr_start_button);
 btn_hovered = false;
@@ -31,11 +36,11 @@ btn_hovered = false;
 
 // Credits System
 credits = [
-    { name: "extonjunior", roles: "- Game Concept & Lore\n- Playtesting & QA" },
-    { name: "rocket176", roles: "- Programming\n- HUD & Menu Design" },
-    { name: "JoanofSnark", roles: "- Music / SFX\n- Game Mechanics Design" },
-    { name: "Ash.Not Ketchum", roles: "- Artwork\n- Backgrounds" },
-    { name: "Mikerio", roles: "- Artwork\n- Backgrounds" }
+	{ name: "Mikerio", roles: "Backgrounds & Artwork" },
+    { name: "extonjunior", roles: "Game Concept & Lore\nPlaytesting & QA\nArtwork" },
+    { name: "rocket176", roles: "Programming\nHUD & Menu Design" },
+    { name: "JoanofSnark", roles: "Music / SFX\nGame Mechanics\nBackgrounds & Artwork" },
+    { name: "Ash.Not Ketchum", roles: "Concept Art" }
 ];
 
-credit_y = display_get_gui_height() - 80;
+credit_y = display_get_gui_height() - 140;
