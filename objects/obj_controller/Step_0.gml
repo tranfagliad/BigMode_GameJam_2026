@@ -6,7 +6,8 @@ if (instance_exists(obj_phone)) {
         move_input = 0;
     }
 }
-if (game_over_triggered) {
+if (game_over_triggered)
+{
     fade_alpha += fade_speed;
     audio_master_gain(1 - fade_alpha);
     if (fade_alpha >= 1) {

@@ -65,7 +65,7 @@ if (flashlight_on && instance_exists(obj_controller) && room != rm_WalkInFreezer
     if (obj_controller.is_actually_moving)
 	{
 		var _turn_amount = abs(obj_controller.new_x - obj_controller.current_x);
-		danger_level += (_turn_amount * 0.2);
+		danger_level += (_turn_amount * 0.17);
 	}
 }
 
@@ -76,7 +76,7 @@ if (mouse_check_button_pressed(mb_left)) {
     var _spike = 8;
     current_noise += _spike;
     
-    var _multiplier = 1 + (current_noise * 0.08); 
+    var _multiplier = 1 + (current_noise * 0.01); 
     danger_level += (_spike * _multiplier); 
 }
 

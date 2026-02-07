@@ -1,16 +1,32 @@
 
+// Blocking checks
 var _blocked = false;
-if (global.phone_blocking_input || (instance_exists(obj_phone) && obj_phone.is_hovered) || (instance_exists(obj_wallet) && obj_wallet.is_hovered)) {
+
+
+
+// Check Phone, Wallet, and Full-Screen Notes
+if (global.phone_blocking_input || global.wallet_blocking_input || global.reading_note) {
     _blocked = true;
 }
+
+
+
+// Double-check specific instances just in case the globals haven't updated yet
+if (!_blocked) {
+    if ((instance_exists(obj_phone) && obj_phone.is_hovered) || 
+        (instance_exists(obj_wallet) && obj_wallet.is_hovered)) {
+        _blocked = true;
+    }
+}
 if (_blocked) {
-	exit;
+    exit;
 }
 
 
 
+// Door State Check
 if (!variable_global_exists("door_states")) {
-	global.door_states = {};
+    global.door_states = {};
 }
 
 

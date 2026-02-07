@@ -1,2 +1,2 @@
 
-darkness_alpha = 0.95;
+darkness_alpha = 0.9;

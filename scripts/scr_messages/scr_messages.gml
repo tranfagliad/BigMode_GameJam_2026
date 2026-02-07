@@ -3,7 +3,7 @@
 
 
 // General messages
-function receive_message(_text, _sender = "Unknown")
+function receive_message(_text, _sender = "Don Cheedle")
 {
     with (obj_phone)
 	{
@@ -38,7 +38,7 @@ function receive_message(_text, _sender = "Unknown")
 
 
 
-function receive_message_once(_id, _text, _sender = "Unknown")
+function receive_message_once(_id, _text, _sender = "Don Cheedle")
 {
     if (!struct_exists(global.sent_messages, _id))
 	{
