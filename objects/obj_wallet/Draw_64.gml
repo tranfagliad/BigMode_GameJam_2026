@@ -89,14 +89,14 @@ if (reading_y < gui_h + 500)
     
 	// Draw the handwritten note on top
     if (reading_overlay != noone) {
-        draw_sprite_ext(reading_overlay, reading_frame, _center_x, reading_y+100, 0.27, 0.27, 0, c_white, 1);
+        draw_sprite_ext(reading_overlay, reading_frame, _center_x, reading_y+100, reading_full_x_scale, reading_full_y_scale, 0, c_white, 1);
     }
 
     var _note_w = sprite_get_width(reading_sprite) * _note_scale;
     var _note_h = sprite_get_height(reading_sprite) * _note_scale;
     
     close_x = _center_x + (_note_w / 2) - 30;
-    close_y = reading_y+70;
+    close_y = 80;
     
 	//draw_circle(close_x, close_y, close_radius, false);
     draw_sprite_ext(spr_red_x, 0, close_x, close_y, 0.7, 0.7, 0, c_white, 1);

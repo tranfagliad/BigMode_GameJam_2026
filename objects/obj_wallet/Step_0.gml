@@ -74,17 +74,23 @@ if (is_open && !_just_opened)
         var _nx2 = _this_note_x + (_real_w / 2);
         var _ny2 = _this_note_y;
         var _ny1 = _this_note_y - _real_h;
-        if (point_in_rectangle(_mx, _my, _nx1, _ny1, _nx2, _ny2)) {
+        if (point_in_rectangle(_mx, _my, _nx1, _ny1, _nx2, _ny2))
+		{
             _n.frame = min(_n.frame + _n.anim_speed, 2); 
             
-            if (mouse_check_button_pressed(mb_left)) {
-                is_reading = true;
-                reading_sprite = _n.sprite;
-				reading_overlay = _n.overlay;
-                reading_frame = sprite_get_number(_n.sprite) - 1;
-                reading_target_y = (gui_h / 2) + 200;
-                audio_play_sound(snd_note, 10, false);
-            }
+            if (mouse_check_button_pressed(mb_left))
+			{
+			    is_reading = true;
+			    reading_sprite = _n.sprite;
+			    reading_overlay = _n.overlay;
+				
+			    reading_full_x_scale = _n.full_note_x_scale;
+			    reading_full_y_scale = _n.full_note_y_scale;
+    
+			    reading_frame = sprite_get_number(_n.sprite) - 1;
+			    reading_target_y = (gui_h / 2) + 200;
+			    audio_play_sound(snd_note, 10, false);
+			}
         } else {
             _n.frame = max(_n.frame - _n.anim_speed, 0);
         }

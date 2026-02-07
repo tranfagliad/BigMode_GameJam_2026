@@ -58,6 +58,8 @@ weight = global.id_details.weight;
 
 // Note System
 notes = [];
+reading_full_x_scale = 1.0; 
+reading_full_y_scale = 1.0;
 
 // Add the first note: Mom's Note
 array_push(notes, {
@@ -67,20 +69,24 @@ array_push(notes, {
     offset_y: 152,
     x_scale: 2.5,
     y_scale: 0.5,
+	full_note_x_scale: 0.27,
+	full_note_y_scale: 0.27,
     frame: 0,
     anim_speed: 0.5,
     w: sprite_get_width(spr_white_note) * 2.5,
     h: sprite_get_height(spr_white_note) * 0.5
 });
 
-// Add the second note: Tutorial Note
+// Add the second note: Controls Note
 array_push(notes, {
     sprite: spr_white_note,
-	overlay: noone,
+	overlay: spr_controls_note,
     offset_x: -145,
     offset_y: 152,
     x_scale: 2.5,
     y_scale: 0.5,
+	full_note_x_scale: 0.21,
+	full_note_y_scale: 0.21,
     frame: 0,
     anim_speed: 0.5,
     w: sprite_get_width(spr_yellow_note) * 2.5,
