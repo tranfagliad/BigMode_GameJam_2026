@@ -3,7 +3,7 @@
 if (instance_exists(obj_phone)) {
     if (obj_phone.danger_level >= 100) {
         game_over_triggered = true;
-        move_input = 0; // Freeze movement on game over
+        move_input = 0;
     }
 }
 if (game_over_triggered) {
@@ -31,9 +31,13 @@ if (instance_exists(obj_transition_manager)) {
     }
 }
 
-// Handle Input and Camera only if no transition is playing
-if (!transition_playing && !global.keypad_active && !global.reading_note) {
+
+
+// Handle Input
+if (!transition_playing && !global.keypad_active && !global.reading_note)
+{
     move_input = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+    var _pre_move_x = camera_get_view_x(camera);
     
     target_x += move_input * camera_move_speed;
     target_x = clamp(target_x, 0, room_width / 2);
@@ -42,7 +46,10 @@ if (!transition_playing && !global.keypad_active && !global.reading_note) {
     new_x = lerp(current_x, target_x, camera_smooth_factor);
     
     camera_set_view_pos(camera, new_x, 0);
+    is_actually_moving = (abs(new_x - _pre_move_x) > 0.01);
 }
-else {
+else
+{
     move_input = 0;
+    is_actually_moving = false;
 }

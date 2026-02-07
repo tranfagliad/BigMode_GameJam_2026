@@ -3,6 +3,7 @@ camera = view_camera[0];
 camera_move_speed = 3;
 camera_smooth_factor = 0.1;
 
+is_actually_moving = false;
 move_input = 0;
 target_x = 0;
 current_x = 0;

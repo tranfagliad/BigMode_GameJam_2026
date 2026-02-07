@@ -67,10 +67,13 @@ prev_mouse_y = _curr_my;
 
 
 // Movement-Based Danger
-if (flashlight_on && instance_exists(obj_controller) && room != rm_WalkInFreezer) {
-    if (obj_controller.move_input != 0) {
-        danger_level += 0.5;
-    }
+if (flashlight_on && instance_exists(obj_controller) && room != rm_WalkInFreezer)
+{
+    if (obj_controller.is_actually_moving)
+	{
+		var _turn_amount = abs(obj_controller.new_x - obj_controller.current_x);
+		danger_level += (_turn_amount * 0.2);
+	}
 }
 
 
