@@ -4,18 +4,24 @@ var _my = device_mouse_y_to_gui(0);
 var _gh = display_get_gui_height();
 var _gw = display_get_gui_width();
 
-// Detect click in the overworld
-if (anim_state == "hidden" && !global.reading_note && mouse_check_button_pressed(mb_left))
+
+
+// Detect Click in the OVerworld
+if (anim_state == "hidden" && !global.reading_note)
 {
-    var _w = (sprite_get_width(overworld_sprite) * 0.5);
-    var _h = (sprite_get_height(overworld_sprite) * 0.5);
-    
-    if (point_in_rectangle(mouse_x, mouse_y, x - _w/2, y - _h/2, x + _w/2, y + _h/2))
+    // Check if we clicked AND ensure the phone isn't blocking us
+    if (mouse_check_button_pressed(mb_left) && !global.phone_blocking_input) 
     {
-        anim_state = "opening";
-        is_reading = true;
-        global.reading_note = true;
-        audio_play_sound(snd_note, 10, false);
+        var _w = (sprite_get_width(overworld_sprite) * 0.5);
+        var _h = (sprite_get_height(overworld_sprite) * 0.5);
+        
+        if (point_in_rectangle(mouse_x, mouse_y, x - _w/2, y - _h/2, x + _w/2, y + _h/2))
+        {
+            anim_state = "opening";
+            is_reading = true;
+            global.reading_note = true;
+            audio_play_sound(snd_note, 10, false);
+        }
     }
 }
 
