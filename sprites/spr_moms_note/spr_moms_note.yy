@@ -23,7 +23,7 @@
   ],
   "name":"spr_moms_note",
   "nineSlice":null,
-  "origin":9,
+  "origin":7,
   "parent":{
     "name":"notes",
     "path":"folders/sprites/notes.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":650,
+    "xorigin":675,
     "yorigin":2200,
   },
   "swatchColours":null,

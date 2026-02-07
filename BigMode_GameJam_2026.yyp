@@ -12,8 +12,8 @@
   "Folders":[
     {"$GMFolder":"","%Name":"fonts","folderPath":"folders/fonts.yy","name":"fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"character_creation","folderPath":"folders/fonts/character_creation.yy","name":"character_creation","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"screens","folderPath":"folders/fonts/screens.yy","name":"screens","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"phone","folderPath":"folders/fonts/phone.yy","name":"phone","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"screens","folderPath":"folders/fonts/screens.yy","name":"screens","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"wallet","folderPath":"folders/fonts/wallet.yy","name":"wallet","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"character_creation","folderPath":"folders/objects/character_creation.yy","name":"character_creation","resourceType":"GMFolder","resourceVersion":"2.0",},
