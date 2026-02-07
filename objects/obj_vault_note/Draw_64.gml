@@ -1,3 +1,4 @@
+
 if (anim_state != "hidden")
 {
     var _gw = display_get_gui_width();
