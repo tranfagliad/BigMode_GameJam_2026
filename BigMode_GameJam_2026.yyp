@@ -195,10 +195,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_CharacterCreation","path":"rooms/rm_CharacterCreation/rm_CharacterCreation.yy",},},
     {"roomId":{"name":"rm_MainMenu","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},},
     {"roomId":{"name":"rm_SplashScreen_One","path":"rooms/rm_SplashScreen_One/rm_SplashScreen_One.yy",},},
     {"roomId":{"name":"rm_SplashScreen_Two","path":"rooms/rm_SplashScreen_Two/rm_SplashScreen_Two.yy",},},
-    {"roomId":{"name":"rm_CharacterCreation","path":"rooms/rm_CharacterCreation/rm_CharacterCreation.yy",},},
     {"roomId":{"name":"rm_CommonArea","path":"rooms/rm_CommonArea/rm_CommonArea.yy",},},
     {"roomId":{"name":"rm_Office","path":"rooms/rm_Office/rm_Office.yy",},},
     {"roomId":{"name":"rm_Kitchen","path":"rooms/rm_Kitchen/rm_Kitchen.yy",},},

@@ -33,9 +33,9 @@ slick_bar_width = 300;
 
 // ID
 id_scale = 2;
-mug_scale = 0.27;
-mug_x = char_x - 84;
-mug_y = char_y - 132;
+mug_scale = 0.25;
+mug_x = char_x - 83;
+mug_y = char_y - 70;
 
 
 
@@ -64,7 +64,7 @@ preset_id_details = [
 		first_middle_name: "JOHN ALAN",
 		sex: "LMAO NO",
 		hair: "Lame",
-		eyes: "Blindfolded",
+		eyes: "Blind",
 		height: "Short",
 		weight: "Average"
 	},
@@ -91,13 +91,13 @@ preset_id_details = [
 
 
 // ID Details Positioning
-header_x = mug_x + 75; 
-header_y = mug_y - 40;
+header_x = mug_x + 68; 
+header_y = mug_y - 120;
 header_column_offset = 65;
 header_line_height = 28;
 
 details_x = mug_x - 60;
-details_y = mug_y + 110;
+details_y = mug_y + 50;
 details_column_offset = 60;
 details_line_height = 28;
 

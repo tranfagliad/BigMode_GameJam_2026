@@ -85,7 +85,7 @@ var _vals = [
 ];
 
 for (var i = 2; i < array_length(details_labels); i++) {
-    var _yy = details_y + (i * details_line_height);
+    var _yy = details_y + (i * details_line_height) + 10;
     
 	draw_set_font(fnt_id_text);
     draw_text(details_x, _yy, details_labels[i] + ":");
