@@ -65,15 +65,15 @@ if (is_open && !_just_opened)
     for (var i = 0; i < array_length(notes); i++)
 	{
         var _n = notes[i];
-        var _this_note_x = _draw_x + _n.offset_x;
-        var _this_note_y = current_y + _n.offset_y;
+		var _this_note_x = _draw_x + _n.offset_x;
+		var _this_note_y = current_y + _n.offset_y;
         var _real_w = (sprite_get_width(_n.sprite) * _n.x_scale);
         var _height_percent = lerp(0.5, 1.0, _n.frame / 2);
         var _real_h = (sprite_get_height(_n.sprite) * _n.y_scale) * _height_percent;
-        var _nx1 = _this_note_x - (_real_w / 2);
-        var _nx2 = _this_note_x + (_real_w / 2);
-        var _ny2 = _this_note_y;
-        var _ny1 = _this_note_y - _real_h;
+        var _nx1 = _this_note_x - (_n.w / 2);
+		var _nx2 = _this_note_x + (_n.w / 2);
+		var _ny2 = _this_note_y;
+		var _ny1 = _this_note_y - _n.h;
         if (point_in_rectangle(_mx, _my, _nx1, _ny1, _nx2, _ny2))
 		{
             _n.frame = min(_n.frame + _n.anim_speed, 2); 

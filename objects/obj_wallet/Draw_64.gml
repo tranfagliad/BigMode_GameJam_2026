@@ -95,8 +95,8 @@ if (reading_y < gui_h + 500)
     var _note_w = sprite_get_width(reading_sprite) * _note_scale;
     var _note_h = sprite_get_height(reading_sprite) * _note_scale;
     
-    close_x = _center_x + (_note_w / 2) - 30;
-    close_y = 80;
+    close_x = _center_x + (_note_w / 2) - 20;
+    close_y = reading_y + 60;
     
 	//draw_circle(close_x, close_y, close_radius, false);
     draw_sprite_ext(spr_red_x, 0, close_x, close_y, 0.7, 0.7, 0, c_white, 1);
