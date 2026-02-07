@@ -23,7 +23,7 @@
   ],
   "name":"spr_kitchen_note",
   "nineSlice":null,
-  "origin":1,
+  "origin":7,
   "parent":{
     "name":"notes",
     "path":"folders/sprites/notes.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":275,
-    "yorigin":0,
+    "yorigin":911,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
