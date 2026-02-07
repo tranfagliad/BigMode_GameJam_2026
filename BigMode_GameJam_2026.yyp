@@ -151,6 +151,8 @@
     {"id":{"name":"snd_painting_remove","path":"sounds/snd_painting_remove/snd_painting_remove.yy",},},
     {"id":{"name":"snd_phone_vibrate","path":"sounds/snd_phone_vibrate/snd_phone_vibrate.yy",},},
     {"id":{"name":"snd_pots_and_pans","path":"sounds/snd_pots_and_pans/snd_pots_and_pans.yy",},},
+    {"id":{"name":"snd_sink_off","path":"sounds/snd_sink_off/snd_sink_off.yy",},},
+    {"id":{"name":"snd_sink_on","path":"sounds/snd_sink_on/snd_sink_on.yy",},},
     {"id":{"name":"snd_sink_running","path":"sounds/snd_sink_running/snd_sink_running.yy",},},
     {"id":{"name":"snd_snore","path":"sounds/snd_snore/snd_snore.yy",},},
     {"id":{"name":"spr_apron","path":"sprites/spr_apron/spr_apron.yy",},},

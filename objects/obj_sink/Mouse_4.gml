@@ -1,23 +1,20 @@
 
-is_on = !is_on;
 
-
-
-// Handle the animation and sound
-if (is_on) {
-    image_speed = 1;
-    
-    if (variable_instance_exists(id, "running_sound") && running_sound != noone) {
-        audio_play_sound(running_sound, 10, true);
-    }
-} else {
-    image_speed = 0; // Stop animation
-    image_index = 0; // Return to the "Dry" frame
-    
-    // Stop the specific sound
-    if (variable_instance_exists(id, "running_sound")) {
-        audio_stop_sound(running_sound);
-    }
+if (global.phone_blocking_input || global.wallet_blocking_input) {
+    exit;
 }
 
-show_debug_message("Sink is now: " + (is_on ? "ON" : "OFF"));
+
+
+is_on = !is_on;
+if (is_on)
+{
+    audio_play_sound(snd_sink_on, 10, false);
+    running_audio_id = audio_play_sound(snd_sink_running, 9, true);
+} else {
+    audio_play_sound(snd_sink_off, 10, false);
+    if (audio_is_playing(running_audio_id)) {
+        audio_stop_sound(running_audio_id);
+    }
+    image_index = 0;
+}

@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_sink_running",
+  "%Name":"snd_sink_on",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":8.098345,
+  "duration":0.40913832,
   "exportDir":"",
-  "name":"snd_sink_running",
+  "name":"snd_sink_on",
   "parent":{
     "name":"kitchen",
     "path":"folders/sounds/kitchen.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_sink_running.wav",
+  "soundFile":"snd_sink_on.wav",
   "volume":1.0,
 }
