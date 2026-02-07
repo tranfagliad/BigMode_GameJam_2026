@@ -21,16 +21,16 @@ if (is_on)
         }
     }
 
-    var _water_x1 = x - 20;
-    var _water_x2 = x + 20;
-    var _water_y1 = y + 10;
-    var _water_y2 = y + 80; 
+    water_x1 = x - 27;
+    water_x2 = x - 15;
+    water_y1 = y - 5;
+    water_y2 = y + 40; 
 
-    if (point_in_rectangle(mouse_x, mouse_y, _water_x1, _water_y1, _water_x2, _water_y2)) 
+    if (point_in_rectangle(mouse_x, mouse_y, water_x1, water_y1, water_x2, water_y2)) 
     {
         if (global.id_details.slickness_level > 0) 
         {
-            global.id_details.slickness_level -= 0.1; 
+            global.id_details.slickness_level -= 0.2; 
         }
     }
 } 

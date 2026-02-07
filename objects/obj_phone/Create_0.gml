@@ -78,8 +78,7 @@ danger_y_offset = 25;
 
 
 // Slickness Meter
-var _slick_map = [33, 66, 100];
-slickness_level = _slick_map[global.id_details.slickness_level];
+slickness_level = global.id_details.slickness_level;
 slick_x_offset = 15;
 slickness_y_offset = 33;
 

@@ -2,34 +2,33 @@
 var _draw_x = wallet_x - sway_x;
 var _frame = is_open ? 1 : 0;
 
-
-
-// Draw the wallet
+// Draw Wallet Base
 draw_sprite_ext(spr_wallet, _frame, _draw_x, current_y, wallet_scale, wallet_scale, 0, c_white, 1);
-
-
 
 if (is_open)
 {
-    // Draw the notes peeking out
+    // Draw Mini Notes
     for (var i = 0; i < array_length(notes); i++) {
         var _n = notes[i];
         draw_sprite_ext(_n.sprite, floor(_n.frame), _draw_x + _n.offset_x, current_y + _n.offset_y, _n.x_scale, _n.y_scale, 0, c_white, 1);
     }
-	
-	// Draw the kitchen key if the player has it
-	if (array_contains(global.inventory, "kitchen_key")) {
-		draw_sprite_ext(spr_kitchen_key, 0, _draw_x+100, current_y, 2, 2, 0, c_white, 1);
-	}
     
-	// Draw the ID mugshot
-	if (array_contains(global.inventory, "apron")) {
-		draw_sprite_ext(spr_character_mugshot_with_apron, slickness_level, _draw_x-177, current_y+288, 0.15, 0.15, 0, c_white, 1);
-	} else {
-		draw_sprite_ext(spr_character_mugshot, slickness_level, _draw_x-177, current_y+288, 0.15, 0.15, 0, c_white, 1);
-	}
-	
-    // ID Text Details
+    // Draw Kitchen Key
+    if (array_contains(global.inventory, "kitchen_key")) {
+        draw_sprite_ext(spr_kitchen_key, 0, _draw_x+100, current_y, 2, 2, 0, c_white, 1);
+    }
+    
+    // Draw Mugshot
+    // Convert 0-100 slickness to frame 0, 1, or 2
+    var _mug_frame = clamp(floor(slickness_level / 34), 0, 2);
+    
+    if (array_contains(global.inventory, "apron")) {
+        draw_sprite_ext(spr_character_mugshot_with_apron, _mug_frame, _draw_x-177, current_y+288, 0.15, 0.15, 0, c_white, 1);
+    } else {
+        draw_sprite_ext(spr_character_mugshot, _mug_frame, _draw_x-177, current_y+288, 0.15, 0.15, 0, c_white, 1);
+    }
+    
+    // Draw ID and text details
     draw_set_colour(c_black);
     draw_set_font(fnt_id_name);
     draw_text(_draw_x - 215, current_y + 290, last_name);
@@ -62,14 +61,13 @@ if (is_open)
     draw_set_font(fnt_id_donor);
     draw_set_colour(c_white);
     draw_text(_draw_x - 109, current_y + 383, "DONOR");
-	
-	// Reset font
-	draw_set_font(-1);
+    
+    draw_set_font(-1); // Reset font
 }
 
 
 
-// Full Screen Note
+// Full Screen Overlay
 if (reading_y < gui_h + 500)
 {
     var _alpha = clamp(1 - (reading_y / gui_h), 0, 0.7);
@@ -79,17 +77,12 @@ if (reading_y < gui_h + 500)
     draw_set_alpha(1.0);
 
     var _center_x = gui_w / 2;
-    
-    // Draw the handwritten note on top
     if (reading_overlay != noone) {
         draw_sprite_ext(reading_overlay, reading_frame, _center_x, reading_y+100, reading_full_x_scale, reading_full_y_scale, 0, c_white, 1);
     }
-
-    // Draw Red X
     draw_sprite_ext(spr_red_x, 0, close_x, close_y, 0.7, 0.7, 0, c_white, 1);
 }
 
 
 
-// Reset color
-draw_set_colour(c_white);
+draw_set_colour(c_white); // Reset global color

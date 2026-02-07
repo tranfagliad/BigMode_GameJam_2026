@@ -1,10 +1,4 @@
 
-if (room == rm_MainMenu) {
-    exit;
-}
-
-
-
 // Draw the Phone Sprite
 var _draw_x = phone_x - sway_x; 
 draw_sprite_ext(spr_phone, 0, _draw_x, current_y, phone_scale, phone_scale, 0, c_white, 1);
