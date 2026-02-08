@@ -71,8 +71,20 @@ if (flashlight_on && instance_exists(obj_controller) && room != rm_WalkInFreezer
 
 
 
-// Noise indictor
-if (mouse_check_button_pressed(mb_left)) {
+/// Click-based danger and slickness
+if (mouse_check_button_pressed(mb_left))
+{
+    if (room == rm_Kitchen) 
+    {
+        // Do Not increase slickness if we click a door or the sink
+        var _on_sink = instance_position(mouse_x, mouse_y, obj_sink);
+        var _on_door = instance_position(mouse_x, mouse_y, obj_door);
+		
+        if (!_on_sink && !_on_door && !is_hovered) {
+            global.id_details.slickness_level = clamp(global.id_details.slickness_level + 10, 0, 100);
+        }
+    }
+    
     var _spike = 8;
     current_noise += _spike;
     var _multiplier = 1 + (current_noise * 0.01); 
