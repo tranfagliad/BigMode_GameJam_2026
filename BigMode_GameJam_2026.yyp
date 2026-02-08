@@ -162,6 +162,7 @@
     {"id":{"name":"spr_bgr_main_menu","path":"sprites/spr_bgr_main_menu/spr_bgr_main_menu.yy",},},
     {"id":{"name":"spr_bgr_office","path":"sprites/spr_bgr_office/spr_bgr_office.yy",},},
     {"id":{"name":"spr_bgr_walk_in_freezer","path":"sprites/spr_bgr_walk_in_freezer/spr_bgr_walk_in_freezer.yy",},},
+    {"id":{"name":"spr_big_tony","path":"sprites/spr_big_tony/spr_big_tony.yy",},},
     {"id":{"name":"spr_bigmode","path":"sprites/spr_bigmode/spr_bigmode.yy",},},
     {"id":{"name":"spr_character_id","path":"sprites/spr_character_id/spr_character_id.yy",},},
     {"id":{"name":"spr_character_mugshot_with_apron","path":"sprites/spr_character_mugshot_with_apron/spr_character_mugshot_with_apron.yy",},},
