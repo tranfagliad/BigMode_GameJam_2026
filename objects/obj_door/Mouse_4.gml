@@ -50,6 +50,19 @@ if (is_locked)
         if (locked_sound != noone) {
             audio_play_sound(locked_sound, 10, false); 
         }
+		
+		// SPECIAL: Common Area to Office
+		if (room == rm_CommonArea && target_room == rm_Office)
+		{
+		    if (!array_contains(global.inventory, "apron"))
+		    {
+		        receive_message_once("office_locked_1", "sounds like a big dog snoozing in there");
+		        var _timer = time_source_create(time_source_game, 4, time_source_units_seconds, function() {
+		            receive_message_once("office_locked_2", "You'll need to look like an employee to sneak by");
+		        });
+		        time_source_start(_timer);
+		    }
+		}
         //show_debug_message("FAIL: Still locked. Key needed: " + string(key_needed));
         exit; 
     }
@@ -57,7 +70,21 @@ if (is_locked)
 
 
 
-// SPECIAL: Kitchen to Freezer hygiene check
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SPECIAL: Kitchen to Freezer
 if (room == rm_Kitchen && target_room == rm_WalkInFreezer) 
 {
     if (global.id_details.slickness_level > 0) 

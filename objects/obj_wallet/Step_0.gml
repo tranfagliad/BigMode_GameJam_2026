@@ -40,6 +40,11 @@ if (is_reading)
         reading_target_y = gui_h + 600;
         var _snd = audio_play_sound(snd_note, 10, false);
         audio_sound_pitch(_snd, 0.5);
+		receive_message_once("tutorial_note_exit_1", "all you gotta do is break into Big Tony's office");
+		var _timer = time_source_create(time_source_game, 4, time_source_units_seconds, function() {
+			receive_message_once("tutorial_note_exit_2", "He's got a secret meatball recipe");
+		});
+		time_source_start(_timer);
     }
     exit;
 }
