@@ -17,4 +17,5 @@ snore_loop = audio_play_sound_on(office_emitter, snd_snore, true, 100);
 
 
 alarm[0] = game_get_speed(gamespeed_fps) * 2;
-alarm[1] = game_get_speed(gamespeed_fps) * 20;
+alarm[1] = game_get_speed(gamespeed_fps) * 6;
+alarm[2] = game_get_speed(gamespeed_fps) * 15;

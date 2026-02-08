@@ -57,6 +57,7 @@ if (anim_state != "hidden") {
                 global.reading_note = false;
                 var _snd = audio_play_sound(snd_note, 10, false);
                 audio_sound_pitch(_snd, 0.5);
+				receive_message_once("recipe_collected", "get the heck outta there! we're goin shopping");
             }
         }
     }

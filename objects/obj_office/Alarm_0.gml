@@ -1,2 +1,2 @@
 
-receive_message_once("office_1", "This is it. The recipe is somewhere in here.");
+receive_message_once("office_1", "the recipe is somewhere hidden in here");

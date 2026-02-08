@@ -26,7 +26,7 @@ else if (anim_state == "closing")
 
 
 
-// Red X
+// Red X Logic
 if (anim_state != "hidden")
 {
     var _btn_scale = 0.6;
@@ -34,16 +34,19 @@ if (anim_state != "hidden")
 
     close_button_x = (_gw / 2) - (_btn_sz / 2);
     close_button_y = _gh - _btn_sz - 30;
-	
+    
     if (anim_state == "reading" && mouse_check_button_pressed(mb_left)) {
         if (!global.phone_blocking_input && !global.wallet_blocking_input) {
             var _p = 20;
-            if (point_in_rectangle(_mx, _my, close_button_x - _p, close_button_y - _p, close_button_x + _btn_sz + _p, close_button_y + _btn_sz + _p)) {
+            if (point_in_rectangle(_mx, _my, close_button_x - _p, close_button_y - _p, close_button_x + _btn_sz + _p, close_button_y + _btn_sz + _p))
+			{
                 anim_state = "closing";
                 global.reading_note = false;
-                
                 var _snd = audio_play_sound(snd_note, 10, false);
                 audio_sound_pitch(_snd, 0.5);
+                if (key_id == "apron") {
+					receive_message_once("apron_collected", "hey that looks good on you!");
+                }
             }
         }
     }

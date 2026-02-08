@@ -63,24 +63,14 @@ if (is_locked)
 		        time_source_start(_timer);
 		    }
 		}
+		// SPECIAL: Common Area to Kitchen
+		else if (room == rm_CommonArea && target_room == rm_Kitchen) {
+			receive_message_once("kitchen_locked_1", "frickin crap its locked");
+		}
         //show_debug_message("FAIL: Still locked. Key needed: " + string(key_needed));
         exit; 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
