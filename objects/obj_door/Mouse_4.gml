@@ -57,6 +57,19 @@ if (is_locked)
 
 
 
+// SPECIAL: Kitchen to Freezer hygiene check
+if (room == rm_Kitchen && target_room == rm_WalkInFreezer) 
+{
+    if (global.id_details.slickness_level > 0) 
+    {
+        audio_play_sound(snd_locked_door, 10, false);
+        receive_message_once("kitchen_to_freezer_hygiene_check", "Your hands are too slick for that door, smh");
+        exit;
+    }
+}
+
+
+
 // Transition to the next room
 if (target_room != noone)
 {
