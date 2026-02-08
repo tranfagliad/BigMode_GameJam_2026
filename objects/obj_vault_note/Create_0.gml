@@ -1,7 +1,7 @@
 
 image_speed = 0;
 note_id = "vault_secret_document";
-reading_sprite = spr_moms_note;   // TODO: Replace with recipe note sprite
+reading_sprite = spr_recipe_note;
 
 
 

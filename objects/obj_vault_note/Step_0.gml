@@ -17,7 +17,7 @@ if (anim_state == "hidden") {
 
 if (anim_state == "opening")
 {
-    var _note_target = _gh; 
+    var _note_target = _gh - 50;  
     anim_y = lerp(anim_y, _note_target, lerp_speed);
     
     if (abs(anim_y - _note_target) < 1) {
@@ -39,25 +39,20 @@ if (anim_state != "hidden") {
     var _x_scale = 0.6;
     close_button_size = sprite_get_width(spr_red_x) * _x_scale;
     close_button_x = (_gw / 2) - (close_button_size / 2); 
-    var _x_final_y = _gh - close_button_size - 30; 
+    close_button_y = anim_y - 20; 
     
-    if (anim_state == "opening" || anim_state == "reading") {
-        close_button_y = _x_final_y; 
-    } else {
-        close_button_y = anim_y + (_x_final_y - _gh); 
-    }
-	
+    // Click detection
     if (anim_state == "reading" && mouse_check_button_pressed(mb_left)) {
         if (!global.phone_blocking_input && !global.wallet_blocking_input) {
             var _p = 20; 
             if (point_in_rectangle(_mx, _my, close_button_x - _p, close_button_y - _p, 
-                                   close_button_x + close_button_size + _p, 
-                                   close_button_y + close_button_size + _p)) {
+                                           close_button_x + close_button_size + _p, 
+                                           close_button_y + close_button_size + _p)) {
                 anim_state = "closing";
                 global.reading_note = false;
                 var _snd = audio_play_sound(snd_note, 10, false);
                 audio_sound_pitch(_snd, 0.5);
-				receive_message_once("recipe_collected", "get the heck outta there! we're goin shopping");
+                receive_message_once("recipe_collected", "get the heck outta there! we're goin shopping");
             }
         }
     }
